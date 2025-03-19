@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs
+[0.246s] -- The C compiler identification is GNU 11.4.0
+[0.376s] -- The CXX compiler identification is GNU 11.4.0
+[0.388s] -- Detecting C compiler ABI info
+[0.465s] -- Detecting C compiler ABI info - done
+[0.479s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.479s] -- Detecting C compile features
+[0.479s] -- Detecting C compile features - done
+[0.482s] -- Detecting CXX compiler ABI info
+[0.556s] -- Detecting CXX compiler ABI info - done
+[0.560s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.560s] -- Detecting CXX compile features
+[0.561s] -- Detecting CXX compile features - done
+[0.589s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.590s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.590s]   has asked CMake to find a package configuration file provided by
+[0.590s]   "ament_cmake", but CMake did not find one.
+[0.590s] 
+[0.590s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.590s]   any of the following names:
+[0.590s] 
+[0.590s]     ament_cmakeConfig.cmake
+[0.590s]     ament_cmake-config.cmake
+[0.590s] 
+[0.590s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.590s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.591s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.591s]   has been installed.
+[0.591s] 
+[0.591s] [0m
+[0.591s] -- Configuring incomplete, errors occurred!
+[0.591s] See also "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles/CMakeOutput.log".
+[0.596s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs

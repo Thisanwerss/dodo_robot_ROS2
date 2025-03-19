@@ -1,0 +1,33 @@
+[0.021s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus
+[0.237s] -- The C compiler identification is GNU 11.4.0
+[0.365s] -- The CXX compiler identification is GNU 11.4.0
+[0.379s] -- Detecting C compiler ABI info
+[0.452s] -- Detecting C compiler ABI info - done
+[0.457s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.457s] -- Detecting C compile features
+[0.458s] -- Detecting C compile features - done
+[0.473s] -- Detecting CXX compiler ABI info
+[0.549s] -- Detecting CXX compiler ABI info - done
+[0.554s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.554s] -- Detecting CXX compile features
+[0.555s] -- Detecting CXX compile features - done
+[0.581s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.581s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.581s]   has asked CMake to find a package configuration file provided by
+[0.581s]   "ament_cmake", but CMake did not find one.
+[0.581s] 
+[0.581s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.581s]   any of the following names:
+[0.581s] 
+[0.581s]     ament_cmakeConfig.cmake
+[0.581s]     ament_cmake-config.cmake
+[0.581s] 
+[0.581s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.581s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.581s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.581s]   has been installed.
+[0.581s] 
+[0.581s] [0m
+[0.581s] -- Configuring incomplete, errors occurred!
+[0.581s] See also "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus/CMakeFiles/CMakeOutput.log".
+[0.585s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus

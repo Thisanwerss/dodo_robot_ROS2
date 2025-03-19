@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus
+Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus
