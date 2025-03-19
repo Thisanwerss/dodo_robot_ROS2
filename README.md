@@ -1,16 +1,20 @@
+<p align="center">
+    <img alt="MIRMI" src="./media/TUM_mirmi.png" height="80
+    ">
+</p>
 # DoDo Alive! Project
-DoDo Alive! is a course-based project at TUM MIRMI
-The Bipedal Robot Locomotion Task is a team comes from course students and motivated external contributers.
-Thanks for the support and supervision from:
-Dr. Hoan Quang Le
-Mr. Haowen Yao
+DoDo Alive! is a course-based project at TUM MIRMI  
+The Bipedal Robot Locomotion Task is a team comes from course students and motivated external contributers.  
+Thanks for the support and supervision from:  
+Dr. Hoan Quang Le  
+Mr. Haowen Yao  
 
-Team Members and Contributers:
-Dian Yu
-Shanshan Zhang
-Zherui Wang
-Denghui Yuan
-Jiahe Mao
+Team Members and Contributers:  
+Dian Yu  
+Shanshan Zhang  
+Zherui Wang  
+Denghui Yuan  
+Jiahe Mao  
 
 
 # Dodo Robot Bipedal Robot Locomotion ROS2 Framework
