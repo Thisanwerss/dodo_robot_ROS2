@@ -1,0 +1,67 @@
+[0.011s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_processing -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing
+[0.069s] -- The C compiler identification is GNU 11.4.0
+[0.120s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.202s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.296s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.306s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.442s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.507s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.536s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.539s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.545s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.553s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.594s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.597s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.667s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.689s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.723s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.738s] -- Looking for pthread.h
+[0.821s] -- Looking for pthread.h - found
+[0.822s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.884s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.885s] -- Found Threads: TRUE  
+[0.918s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.941s] -- Found dodo_msgs: 0.1.0 (/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake)
+[1.020s] -- Configuring done
+[1.029s] -- Generating done
+[1.032s] -- Build files have been written to: /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing
+[1.040s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_processing -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing
+[1.042s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing -- -j2 -l2
+[1.093s] [ 50%] [32mBuilding CXX object CMakeFiles/processing_node.dir/src/processing_node.cpp.o[0m
+[12.514s] [100%] [32m[1mLinking CXX executable processing_node[0m
+[13.135s] [100%] Built target processing_node
+[13.144s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing -- -j2 -l2
+[13.146s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing
+[13.152s] -- Install configuration: ""
+[13.152s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/lib/dodo_processing/processing_node
+[13.162s] -- Set runtime path of "/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/lib/dodo_processing/processing_node" to ""
+[13.162s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/launch
+[13.162s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/launch/processing_node.launch.py
+[13.162s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/include/
+[13.163s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/include//dodo_processing
+[13.163s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/include//dodo_processing/processing_node.hpp
+[13.164s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/ament_index/resource_index/package_run_dependencies/dodo_processing
+[13.164s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/ament_index/resource_index/parent_prefix_path/dodo_processing
+[13.164s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/environment/ament_prefix_path.sh
+[13.165s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/environment/ament_prefix_path.dsv
+[13.165s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/environment/path.sh
+[13.165s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/environment/path.dsv
+[13.166s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/local_setup.bash
+[13.166s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/local_setup.sh
+[13.166s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/local_setup.zsh
+[13.167s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/local_setup.dsv
+[13.167s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/package.dsv
+[13.168s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/ament_index/resource_index/packages/dodo_processing
+[13.168s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/cmake/dodo_processingConfig.cmake
+[13.168s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/cmake/dodo_processingConfig-version.cmake
+[13.169s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing/share/dodo_processing/package.xml
+[13.172s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_processing

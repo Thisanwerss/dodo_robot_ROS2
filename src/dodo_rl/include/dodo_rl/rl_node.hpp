@@ -5,6 +5,7 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <vector>
 #include <string>
+#include <cmath>
 
 #include "dodo_rl/ppo_model.hpp"
 
@@ -25,6 +26,7 @@ private:
   std::string model_path_;
   std::vector<std::string> joint_names_;
   int control_rate_;
+  bool dummy_mode_;
 
   // PPO model
   std::unique_ptr<PPOModel> ppo_model_;

@@ -1,0 +1,8 @@
+setup.py
+dodo_msgs/__init__.py
+dodo_msgs.egg-info/PKG-INFO
+dodo_msgs.egg-info/SOURCES.txt
+dodo_msgs.egg-info/dependency_links.txt
+dodo_msgs.egg-info/top_level.txt
+dodo_msgs/msg/__init__.py
+dodo_msgs/msg/_aligned_sensor_data.py

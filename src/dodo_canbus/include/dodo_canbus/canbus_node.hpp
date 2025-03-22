@@ -8,6 +8,8 @@
 #include <vector>
 #include <mutex>
 #include <map>
+#include <algorithm>
+#include <cmath>
 #include "dodo_canbus/odrive_can.hpp"
 
 namespace dodo_canbus
@@ -31,12 +33,16 @@ private:
   void sendCommands();
   void readMotorStates();
   void applyPIDGains();
+  
+  // Dummy mode helper function
+  void generateDummyMotorStates(sensor_msgs::msg::JointState & msg);
 
   // Parameters
   std::string can_interface_;
   int update_rate_;
   std::vector<int> motor_ids_;
   std::string pid_gains_json_;
+  bool dummy_mode_;
   
   // CAN interface
   std::unique_ptr<OdriveCANInterface> can_interface_ptr_;
@@ -44,6 +50,11 @@ private:
   // Data storage
   sensor_msgs::msg::JointState::SharedPtr latest_processed_commands_;
   bool emergency_stop_active_;
+  
+  // Dummy mode state variables
+  sensor_msgs::msg::JointState dummy_last_commands_;
+  std::vector<double> dummy_last_positions_;
+  std::vector<double> dummy_velocities_;
   
   // Mutexes for thread safety
   std::mutex commands_mutex_;

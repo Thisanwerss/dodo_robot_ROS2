@@ -1,0 +1,4 @@
+source;share/dodo_sensor_fusion/local_setup.bash
+source;share/dodo_sensor_fusion/local_setup.dsv
+source;share/dodo_sensor_fusion/local_setup.sh
+source;share/dodo_sensor_fusion/local_setup.zsh

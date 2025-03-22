@@ -1,0 +1,4 @@
+source;share/dodo_imu/local_setup.bash
+source;share/dodo_imu/local_setup.dsv
+source;share/dodo_imu/local_setup.sh
+source;share/dodo_imu/local_setup.zsh

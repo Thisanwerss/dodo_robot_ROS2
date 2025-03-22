@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6a8892e743386636b10b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "dodo_msgs__py",
+					"jsonFile" : "directory-dodo_msgs__py-6f5dae5c9b43567f517e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "dodo_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_dodo_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_dodo_msgs_egg-96a775c73eab2e4b1398.json",
+					"name" : "ament_cmake_python_build_dodo_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_dodo_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_dodo_msgs-c7276d0a1570d9335408.json",
+					"name" : "ament_cmake_python_symlink_dodo_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs-7ba444ed0113f8c71718.json",
+					"name" : "dodo_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__cpp-e22a9923772235c9e324.json",
+					"name" : "dodo_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dodo_msgs__py::@6d3db6dc1a924748a9f8",
+					"jsonFile" : "target-dodo_msgs__py-81923e11448a8dedf5a2.json",
+					"name" : "dodo_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_generator_c-d7e996f3da8d1d9b1412.json",
+					"name" : "dodo_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_generator_py-e6701ecc00a18e889526.json",
+					"name" : "dodo_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_c-4995b337278dbcf63782.json",
+					"name" : "dodo_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_c__pyext-5221b1b86bf98765eeeb.json",
+					"name" : "dodo_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_cpp-647d5201878127ff4a6b.json",
+					"name" : "dodo_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_fastrtps_c-a1146ed3b408ceec9b48.json",
+					"name" : "dodo_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_fastrtps_c__pyext-ab7c44bd9218834d00b5.json",
+					"name" : "dodo_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_fastrtps_cpp-34e8e20d3a21108bd371.json",
+					"name" : "dodo_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_introspection_c-2805a088491a204ea22c.json",
+					"name" : "dodo_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_introspection_c__pyext-09c8280f23d19bd8bef7.json",
+					"name" : "dodo_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs__rosidl_typesupport_introspection_cpp-e283ac9c96efb4ded8c0.json",
+					"name" : "dodo_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dodo_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dodo_msgs_uninstall-1b6f53b08501f47bbdd2.json",
+					"name" : "dodo_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-83b06f918adf1b4a00da.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs",
+		"source" : "/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

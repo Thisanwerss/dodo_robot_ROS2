@@ -1,0 +1,8 @@
+source;share/dodo_sensor_fusion/hook/cmake_prefix_path.ps1
+source;share/dodo_sensor_fusion/hook/cmake_prefix_path.dsv
+source;share/dodo_sensor_fusion/hook/cmake_prefix_path.sh
+source;share/dodo_sensor_fusion/local_setup.bash
+source;share/dodo_sensor_fusion/local_setup.dsv
+source;share/dodo_sensor_fusion/local_setup.ps1
+source;share/dodo_sensor_fusion/local_setup.sh
+source;share/dodo_sensor_fusion/local_setup.zsh

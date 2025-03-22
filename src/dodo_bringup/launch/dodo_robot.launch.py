@@ -12,6 +12,12 @@ def generate_launch_description():
         default_value='false',
         description='Use simulation clock if true'
     )
+    
+    dummy_mode_arg = DeclareLaunchArgument(
+        'dummy_mode',
+        default_value='false',
+        description='Enable dummy mode for testing without hardware'
+    )
 
     # Package paths
     rl_pkg_share = FindPackageShare('dodo_rl')
@@ -29,7 +35,8 @@ def generate_launch_description():
             PathJoinSubstitution([rl_pkg_share, 'launch', 'rl_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -38,7 +45,8 @@ def generate_launch_description():
             PathJoinSubstitution([usb_command_pkg_share, 'launch', 'usb_command.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -47,7 +55,8 @@ def generate_launch_description():
             PathJoinSubstitution([processing_pkg_share, 'launch', 'processing_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -56,7 +65,8 @@ def generate_launch_description():
             PathJoinSubstitution([canbus_pkg_share, 'launch', 'canbus_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -65,7 +75,8 @@ def generate_launch_description():
             PathJoinSubstitution([imu_pkg_share, 'launch', 'imu_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -74,7 +85,8 @@ def generate_launch_description():
             PathJoinSubstitution([sensor_fusion_pkg_share, 'launch', 'fusion_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -83,7 +95,8 @@ def generate_launch_description():
             PathJoinSubstitution([safety_pkg_share, 'launch', 'safety_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -92,7 +105,8 @@ def generate_launch_description():
             PathJoinSubstitution([monitor_pkg_share, 'launch', 'monitor_node.launch.py'])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time')
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }.items()
     )
 
@@ -105,8 +119,20 @@ def generate_launch_description():
         output='screen'
     )
 
+    # State Manager Node launch
+    state_manager_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([FindPackageShare('dodo_bringup'), 'launch', 'state_manager.launch.py'])
+        ]),
+        launch_arguments={
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
+        }.items()
+    )
+
     return LaunchDescription([
         use_sim_time_arg,
+        dummy_mode_arg,
         
         # Core nodes for robot control
         GroupAction([
@@ -118,6 +144,7 @@ def generate_launch_description():
             rl_node_launch,
             usb_command_node_launch,
             monitor_node_launch,
+            state_manager_launch,
         ]),
         
         # Visualization

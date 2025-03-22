@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target canbus_node[0m
+[100%] Built target canbus_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/lib/dodo_canbus/canbus_node
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/launch/canbus_node.launch.py
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/include//dodo_canbus/canbus_node.hpp
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/include//dodo_canbus/odrive_can.hpp
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/ament_index/resource_index/package_run_dependencies/dodo_canbus
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/ament_index/resource_index/parent_prefix_path/dodo_canbus
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/environment/path.sh
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/environment/path.dsv
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/local_setup.bash
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/local_setup.sh
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/local_setup.zsh
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/local_setup.dsv
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/package.dsv
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/ament_index/resource_index/packages/dodo_canbus
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig.cmake
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig-version.cmake
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus/share/dodo_canbus/package.xml

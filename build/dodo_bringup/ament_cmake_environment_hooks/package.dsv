@@ -1,0 +1,4 @@
+source;share/dodo_bringup/local_setup.bash
+source;share/dodo_bringup/local_setup.dsv
+source;share/dodo_bringup/local_setup.sh
+source;share/dodo_bringup/local_setup.zsh

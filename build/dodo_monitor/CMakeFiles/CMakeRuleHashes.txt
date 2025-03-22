@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+da64412cb938f307a9358afcdcac4847 CMakeFiles/dodo_monitor_uninstall

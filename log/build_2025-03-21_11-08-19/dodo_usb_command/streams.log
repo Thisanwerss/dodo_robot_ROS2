@@ -1,0 +1,25 @@
+[0.012s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command -- -j2 -l2
+[0.081s] [100%] Built target usb_command_node
+[0.098s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command -- -j2 -l2
+[0.099s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command
+[0.110s] -- Install configuration: ""
+[0.111s] -- Execute custom install script
+[0.111s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/lib/dodo_usb_command/usb_command_node
+[0.111s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/launch/usb_command.launch.py
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/include//dodo_usb_command/usb_command_node.hpp
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/ament_index/resource_index/package_run_dependencies/dodo_usb_command
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/ament_index/resource_index/parent_prefix_path/dodo_usb_command
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/environment/ament_prefix_path.dsv
+[0.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/environment/path.sh
+[0.113s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/environment/path.dsv
+[0.113s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/local_setup.bash
+[0.113s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/local_setup.sh
+[0.113s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/local_setup.zsh
+[0.113s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/local_setup.dsv
+[0.113s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/package.dsv
+[0.122s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/ament_index/resource_index/packages/dodo_usb_command
+[0.122s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/cmake/dodo_usb_commandConfig.cmake
+[0.122s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/cmake/dodo_usb_commandConfig-version.cmake
+[0.122s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command/share/dodo_usb_command/package.xml
+[0.124s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command

@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.114s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.120s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.144s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.146s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.150s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.159s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.167s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.188s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.189s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.279s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.311s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.324s] -- Found dodo_msgs: 0.1.0 (/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake)
+[0.419s] -- Configuring done
+[0.434s] -- Generating done
+[0.438s] -- Build files have been written to: /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor
+[0.446s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor
+[0.447s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor -- -j2 -l2
+[0.498s] [35m[1mConsolidate compiler generated dependencies of target monitor_node[0m
+[0.530s] [ 50%] [32m[1mLinking CXX executable monitor_node[0m
+[0.868s] [100%] Built target monitor_node
+[0.879s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor -- -j2 -l2
+[0.879s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor
+[0.888s] -- Install configuration: ""
+[0.888s] -- Execute custom install script
+[0.888s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/lib/dodo_monitor/monitor_node
+[0.901s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/launch/monitor_node.launch.py
+[0.910s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/include//dodo_monitor/monitor_node.hpp
+[0.923s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/ament_index/resource_index/package_run_dependencies/dodo_monitor
+[0.932s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/ament_index/resource_index/parent_prefix_path/dodo_monitor
+[0.940s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/environment/ament_prefix_path.sh
+[0.950s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/environment/ament_prefix_path.dsv
+[0.962s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/environment/path.sh
+[0.968s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/environment/path.dsv
+[0.976s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/local_setup.bash
+[0.983s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/local_setup.sh
+[0.990s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/local_setup.zsh
+[0.998s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/local_setup.dsv
+[1.005s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/package.dsv
+[1.012s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/ament_index/resource_index/packages/dodo_monitor
+[1.019s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/cmake/dodo_monitorConfig.cmake
+[1.027s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/cmake/dodo_monitorConfig-version.cmake
+[1.035s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor/share/dodo_monitor/package.xml
+[1.044s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_bringup:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_processing:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_monitor:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu:/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_canbus:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor

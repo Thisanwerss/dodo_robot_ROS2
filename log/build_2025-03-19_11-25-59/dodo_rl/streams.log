@@ -1,0 +1,29 @@
+[0.041s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl -- -j2 -l2
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target rl_node[0m
+[0.219s] [100%] Built target rl_node
+[0.235s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl -- -j2 -l2
+[0.238s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl
+[0.244s] -- Install configuration: ""
+[0.245s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/lib/dodo_rl/rl_node
+[0.245s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/launch
+[0.245s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/launch/rl_node.launch.py
+[0.245s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/include/
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/include//dodo_rl
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/include//dodo_rl/ppo_model.hpp
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/include//dodo_rl/rl_node.hpp
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/ament_index/resource_index/package_run_dependencies/dodo_rl
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/ament_index/resource_index/parent_prefix_path/dodo_rl
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/environment/ament_prefix_path.sh
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/environment/ament_prefix_path.dsv
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/environment/path.sh
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/environment/path.dsv
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/local_setup.bash
+[0.246s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/local_setup.sh
+[0.247s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/local_setup.zsh
+[0.247s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/local_setup.dsv
+[0.247s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/package.dsv
+[0.249s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/ament_index/resource_index/packages/dodo_rl
+[0.249s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/cmake/dodo_rlConfig.cmake
+[0.249s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/cmake/dodo_rlConfig-version.cmake
+[0.249s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_rl/share/dodo_rl/package.xml
+[0.253s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl

@@ -1,0 +1,4 @@
+source;share/dodo_canbus/local_setup.bash
+source;share/dodo_canbus/local_setup.dsv
+source;share/dodo_canbus/local_setup.sh
+source;share/dodo_canbus/local_setup.zsh

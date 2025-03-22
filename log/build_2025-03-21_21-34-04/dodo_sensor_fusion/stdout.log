@@ -1,0 +1,21 @@
+[100%] Built target fusion_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/lib/dodo_sensor_fusion/fusion_node
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/launch/fusion_node.launch.py
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/include//dodo_sensor_fusion/fusion_node.hpp
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/ament_index/resource_index/package_run_dependencies/dodo_sensor_fusion
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/ament_index/resource_index/parent_prefix_path/dodo_sensor_fusion
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/local_setup.dsv
+-- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.dsv
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/ament_index/resource_index/packages/dodo_sensor_fusion
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/cmake/dodo_sensor_fusionConfig.cmake
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/cmake/dodo_sensor_fusionConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.xml

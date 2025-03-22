@@ -1,0 +1,66 @@
+[0.013s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety
+[0.129s] -- The C compiler identification is GNU 11.4.0
+[0.178s] -- The CXX compiler identification is GNU 11.4.0
+[0.191s] -- Detecting C compiler ABI info
+[0.259s] -- Detecting C compiler ABI info - done
+[0.261s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.262s] -- Detecting C compile features
+[0.263s] -- Detecting C compile features - done
+[0.266s] -- Detecting CXX compiler ABI info
+[0.343s] -- Detecting CXX compiler ABI info - done
+[0.345s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.345s] -- Detecting CXX compile features
+[0.345s] -- Detecting CXX compile features - done
+[0.349s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.525s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.555s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.559s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.565s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.574s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.616s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.618s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.694s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.717s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.748s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.754s] -- Looking for pthread.h
+[0.819s] -- Looking for pthread.h - found
+[0.820s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.880s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.880s] -- Found Threads: TRUE  
+[0.912s] -- Found dodo_msgs: 0.1.0 (/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake)
+[0.992s] -- Configuring done
+[1.001s] -- Generating done
+[1.004s] -- Build files have been written to: /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety
+[1.014s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety
+[1.014s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety -- -j2 -l2
+[1.057s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[8.680s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[9.020s] [100%] Built target safety_node
+[9.033s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety -- -j2 -l2
+[9.035s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety
+[9.042s] -- Install configuration: ""
+[9.043s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/lib/dodo_safety/safety_node
+[9.048s] -- Set runtime path of "/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/lib/dodo_safety/safety_node" to ""
+[9.048s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/launch
+[9.058s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/launch/safety_node.launch.py
+[9.059s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/include/
+[9.059s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/include//dodo_safety
+[9.059s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/include//dodo_safety/safety_node.hpp
+[9.060s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/ament_index/resource_index/package_run_dependencies/dodo_safety
+[9.060s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/ament_index/resource_index/parent_prefix_path/dodo_safety
+[9.061s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/environment/ament_prefix_path.sh
+[9.061s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/environment/ament_prefix_path.dsv
+[9.062s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/environment/path.sh
+[9.062s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/environment/path.dsv
+[9.062s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/local_setup.bash
+[9.063s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/local_setup.sh
+[9.063s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/local_setup.zsh
+[9.064s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/local_setup.dsv
+[9.064s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/package.dsv
+[9.065s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/ament_index/resource_index/packages/dodo_safety
+[9.066s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/cmake/dodo_safetyConfig.cmake
+[9.066s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/cmake/dodo_safetyConfig-version.cmake
+[9.067s] -- Installing: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_safety/share/dodo_safety/package.xml
+[9.072s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety

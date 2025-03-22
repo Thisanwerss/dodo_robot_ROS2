@@ -1,0 +1,120 @@
+[0.023s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs -- -j2 -l2
+[0.255s] [  3%] Built target dodo_msgs__cpp
+[0.278s] [ 12%] Built target dodo_msgs__rosidl_generator_c
+[0.309s] [ 12%] Built target ament_cmake_python_symlink_dodo_msgs
+[0.336s] [ 22%] Built target dodo_msgs__rosidl_typesupport_cpp
+[0.364s] [ 32%] Built target dodo_msgs__rosidl_typesupport_fastrtps_c
+[0.414s] [ 41%] Built target dodo_msgs__rosidl_typesupport_c
+[0.435s] [ 51%] Built target dodo_msgs__rosidl_typesupport_introspection_c
+[0.451s] [ 61%] Built target dodo_msgs__rosidl_typesupport_fastrtps_cpp
+[0.487s] [ 70%] Built target dodo_msgs__rosidl_typesupport_introspection_cpp
+[0.577s] [ 70%] Built target dodo_msgs
+[0.762s] [ 74%] Built target dodo_msgs__py
+[0.854s] [ 80%] Built target dodo_msgs__rosidl_generator_py
+[0.909s] [ 87%] Built target dodo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.962s] running egg_info
+[0.963s] writing dodo_msgs.egg-info/PKG-INFO
+[0.964s] writing dependency_links to dodo_msgs.egg-info/dependency_links.txt
+[0.965s] writing top-level names to dodo_msgs.egg-info/top_level.txt
+[0.968s] reading manifest file 'dodo_msgs.egg-info/SOURCES.txt'
+[0.969s] writing manifest file 'dodo_msgs.egg-info/SOURCES.txt'
+[0.989s] [ 93%] Built target dodo_msgs__rosidl_typesupport_introspection_c__pyext
+[1.017s] [100%] Built target dodo_msgs__rosidl_typesupport_c__pyext
+[1.021s] [100%] Built target ament_cmake_python_build_dodo_msgs_egg
+[1.055s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs -- -j2 -l2
+[1.058s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+[1.072s] -- Install configuration: ""
+[1.074s] -- Execute custom install script
+[1.076s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/ament_index/resource_index/rosidl_interfaces/dodo_msgs
+[1.080s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/aligned_sensor_data.h
+[1.081s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__functions.h
+[1.081s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__struct.h
+[1.082s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__type_support.h
+[1.082s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.084s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/library_path.sh
+[1.084s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/library_path.dsv
+[1.086s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_fastrtps_c.h
+[1.087s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.095s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h
+[1.096s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.097s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/aligned_sensor_data.hpp
+[1.097s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__builder.hpp
+[1.098s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__struct.hpp
+[1.098s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__traits.hpp
+[1.099s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__type_support.hpp
+[1.100s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.101s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_fastrtps_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.104s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_cpp.hpp
+[1.104s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/pythonpath.sh
+[1.105s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/pythonpath.dsv
+[1.107s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[1.108s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.108s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.109s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[1.111s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/__init__.py
+[1.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_c.c
+[1.112s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.116s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.117s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.117s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.119s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.120s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/libdodo_msgs__rosidl_generator_py.so
+[1.121s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/__init__.py
+[1.121s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/_aligned_sensor_data.py
+[1.122s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/_aligned_sensor_data_s.c
+[1.123s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.124s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.125s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.126s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/msg/AlignedSensorData.idl
+[1.127s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/msg/AlignedSensorData.msg
+[1.128s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/ament_index/resource_index/package_run_dependencies/dodo_msgs
+[1.129s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/ament_index/resource_index/parent_prefix_path/dodo_msgs
+[1.130s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/ament_prefix_path.sh
+[1.131s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/ament_prefix_path.dsv
+[1.132s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/path.sh
+[1.133s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/environment/path.dsv
+[1.133s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/local_setup.bash
+[1.135s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/local_setup.sh
+[1.136s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/local_setup.zsh
+[1.138s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/local_setup.dsv
+[1.138s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/package.dsv
+[1.153s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/ament_index/resource_index/packages/dodo_msgs
+[1.157s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake-extras.cmake
+[1.158s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.159s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.161s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.162s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.162s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.163s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.164s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgsConfig.cmake
+[1.164s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgsConfig-version.cmake
+[1.165s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/package.xml
+[1.167s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
+[1.170s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
+[1.171s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
+[1.172s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
+[1.174s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.176s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
+[1.177s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
+[1.216s] Listing '/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs'...
+[1.216s] Listing '/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg'...
+[1.221s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
+[1.223s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cExport.cmake
+[1.223s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.224s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.224s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.224s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.225s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.226s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cExport.cmake
+[1.226s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.229s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cppExport.cmake
+[1.229s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.229s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.229s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.229s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.231s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cppExport.cmake
+[1.231s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.233s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_pyExport.cmake
+[1.233s] -- Up-to-date: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.244s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs

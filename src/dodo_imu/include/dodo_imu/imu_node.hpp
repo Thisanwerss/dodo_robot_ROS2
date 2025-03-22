@@ -5,6 +5,7 @@
 #include <sensor_msgs/msg/imu.hpp>
 #include <string>
 #include <memory>
+#include <cmath>
 #include "dodo_imu/imu_driver.hpp"
 
 namespace dodo_imu
@@ -22,12 +23,16 @@ private:
   
   // Convert raw IMU data to ROS message
   sensor_msgs::msg::Imu convertToROSMsg(const IMUData & data);
+  
+  // Generate dummy IMU data for testing
+  void generateDummyIMUData(IMUData & data);
 
   // Parameters
   std::string imu_device_;
   uint8_t imu_address_;
   int publish_rate_;
   std::string frame_id_;
+  bool dummy_mode_;
   
   // IMU driver
   std::unique_ptr<IMUDriver> imu_driver_;

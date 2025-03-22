@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus -- -j2 -l2
+Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus -- -j2 -l2
+Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus
+Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus

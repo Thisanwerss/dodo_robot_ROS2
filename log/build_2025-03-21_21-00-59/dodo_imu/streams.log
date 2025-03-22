@@ -1,0 +1,26 @@
+[0.022s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu -- -j2 -l2
+[0.270s] [100%] Built target imu_node
+[0.295s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu -- -j2 -l2
+[0.321s] Invoking command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu
+[0.342s] -- Install configuration: ""
+[0.343s] -- Execute custom install script
+[0.345s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/lib/dodo_imu/imu_node
+[0.347s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/launch/imu_node.launch.py
+[0.348s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/include//dodo_imu/imu_driver.hpp
+[0.349s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/include//dodo_imu/imu_node.hpp
+[0.350s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/ament_index/resource_index/package_run_dependencies/dodo_imu
+[0.350s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/ament_index/resource_index/parent_prefix_path/dodo_imu
+[0.351s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/environment/ament_prefix_path.sh
+[0.352s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/environment/ament_prefix_path.dsv
+[0.352s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/environment/path.sh
+[0.353s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/environment/path.dsv
+[0.353s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/local_setup.bash
+[0.353s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/local_setup.sh
+[0.354s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/local_setup.zsh
+[0.355s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/local_setup.dsv
+[0.355s] -- Symlinking: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/package.dsv
+[0.369s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/ament_index/resource_index/packages/dodo_imu
+[0.370s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/cmake/dodo_imuConfig.cmake
+[0.370s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/cmake/dodo_imuConfig-version.cmake
+[0.371s] -- Up-to-date symlink: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_imu/share/dodo_imu/package.xml
+[0.374s] Invoked command in '/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu

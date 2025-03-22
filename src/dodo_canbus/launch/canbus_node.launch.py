@@ -31,6 +31,18 @@ def generate_launch_description():
         }''',
         description='JSON string defining PID gains for each motor'
     )
+    
+    use_sim_time_arg = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='false',
+        description='Use simulation time'
+    )
+    
+    dummy_mode_arg = DeclareLaunchArgument(
+        'dummy_mode',
+        default_value='false',
+        description='Use dummy mode for testing without hardware'
+    )
 
     # CANBUS node
     canbus_node = Node(
@@ -41,7 +53,9 @@ def generate_launch_description():
             'can_interface': LaunchConfiguration('can_interface'),
             'update_rate': LaunchConfiguration('update_rate'),
             'motor_ids': [1, 2, 3, 4, 5, 6, 7, 8],
-            'pid_gains': LaunchConfiguration('pid_gains')
+            'pid_gains': LaunchConfiguration('pid_gains'),
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }],
         output='screen'
     )
@@ -50,5 +64,7 @@ def generate_launch_description():
         can_interface_arg,
         update_rate_arg,
         pid_gains_arg,
+        use_sim_time_arg,
+        dummy_mode_arg,
         canbus_node
     ])

@@ -28,6 +28,18 @@ def generate_launch_description():
         default_value='imu_link',
         description='Frame ID for IMU messages'
     )
+    
+    use_sim_time_arg = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='false',
+        description='Use simulation time'
+    )
+    
+    dummy_mode_arg = DeclareLaunchArgument(
+        'dummy_mode',
+        default_value='false',
+        description='Use dummy mode for testing without hardware'
+    )
 
     # IMU node
     imu_node = Node(
@@ -38,7 +50,9 @@ def generate_launch_description():
             'imu_device': LaunchConfiguration('imu_device'),
             'imu_address': LaunchConfiguration('imu_address'),
             'publish_rate': LaunchConfiguration('publish_rate'),
-            'frame_id': LaunchConfiguration('frame_id')
+            'frame_id': LaunchConfiguration('frame_id'),
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            'dummy_mode': LaunchConfiguration('dummy_mode')
         }],
         output='screen'
     )
@@ -48,5 +62,7 @@ def generate_launch_description():
         imu_address_arg,
         publish_rate_arg,
         frame_id_arg,
+        use_sim_time_arg,
+        dummy_mode_arg,
         imu_node
     ])
