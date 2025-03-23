@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
 
 # Include any dependencies generated for this target.
 include CMakeFiles/monitor_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/monitor_node.dir/progress.make
 include CMakeFiles/monitor_node.dir/flags.make
 
 CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o: CMakeFiles/monitor_node.dir/flags.make
-CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o: /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor/src/monitor_node.cpp
+CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o: /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/src/monitor_node.cpp
 CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o: CMakeFiles/monitor_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o -MF CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o.d -o CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o -c /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor/src/monitor_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o -MF CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o.d -o CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o -c /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/src/monitor_node.cpp
 
 CMakeFiles/monitor_node.dir/src/monitor_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monitor_node.dir/src/monitor_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor/src/monitor_node.cpp > CMakeFiles/monitor_node.dir/src/monitor_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/src/monitor_node.cpp > CMakeFiles/monitor_node.dir/src/monitor_node.cpp.i
 
 CMakeFiles/monitor_node.dir/src/monitor_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor_node.dir/src/monitor_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor/src/monitor_node.cpp -o CMakeFiles/monitor_node.dir/src/monitor_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/src/monitor_node.cpp -o CMakeFiles/monitor_node.dir/src/monitor_node.cpp.s
 
 # Object files for target monitor_node
 monitor_node_OBJECTS = \
@@ -99,12 +99,12 @@ monitor_node: /opt/ros/humble/lib/libdiagnostic_msgs__rosidl_typesupport_fastrtp
 monitor_node: /opt/ros/humble/lib/libdiagnostic_msgs__rosidl_typesupport_introspection_cpp.so
 monitor_node: /opt/ros/humble/lib/libdiagnostic_msgs__rosidl_typesupport_cpp.so
 monitor_node: /opt/ros/humble/lib/libdiagnostic_msgs__rosidl_generator_py.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
 monitor_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 monitor_node: /opt/ros/humble/lib/librcl.so
 monitor_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -167,8 +167,8 @@ monitor_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 monitor_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 monitor_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 monitor_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
-monitor_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
+monitor_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
 monitor_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 monitor_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 monitor_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
@@ -187,7 +187,7 @@ monitor_node: /opt/ros/humble/lib/librcpputils.so
 monitor_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 monitor_node: /opt/ros/humble/lib/librcutils.so
 monitor_node: CMakeFiles/monitor_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable monitor_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable monitor_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monitor_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -199,6 +199,6 @@ CMakeFiles/monitor_node.dir/clean:
 .PHONY : CMakeFiles/monitor_node.dir/clean
 
 CMakeFiles/monitor_node.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor/CMakeFiles/monitor_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/CMakeFiles/monitor_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/monitor_node.dir/depend
 

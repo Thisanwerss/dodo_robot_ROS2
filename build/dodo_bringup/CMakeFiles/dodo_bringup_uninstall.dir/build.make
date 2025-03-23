@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_bringup
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
 
 # Utility rule file for dodo_bringup_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dodo_bringup_uninstall.dir/compiler_depend.make
 include CMakeFiles/dodo_bringup_uninstall.dir/progress.make
 
 CMakeFiles/dodo_bringup_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dodo_bringup_uninstall: CMakeFiles/dodo_bringup_uninstall
 dodo_bringup_uninstall: CMakeFiles/dodo_bringup_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dodo_bringup_uninstall.dir/clean:
 .PHONY : CMakeFiles/dodo_bringup_uninstall.dir/clean
 
 CMakeFiles/dodo_bringup_uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_bringup /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_bringup /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup/CMakeFiles/dodo_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup /home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup/CMakeFiles/dodo_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_bringup_uninstall.dir/depend
 

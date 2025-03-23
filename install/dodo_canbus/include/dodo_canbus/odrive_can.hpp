@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp
+/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 # Utility rule file for dodo_msgs__py.
 
@@ -177,8 +177,8 @@ rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -210,10 +210,10 @@ dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build: dodo_msgs__py
 .PHONY : dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build
 
 dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/clean:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/dodo_msgs__py.dir/cmake_clean.cmake
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/dodo_msgs__py.dir/cmake_clean.cmake
 .PHONY : dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/clean
 
 dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/depend
 

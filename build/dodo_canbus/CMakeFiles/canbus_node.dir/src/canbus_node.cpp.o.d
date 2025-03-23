@@ -1,7 +1,7 @@
 CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/src/canbus_node.cpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/canbus_node.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/include/dodo_canbus/canbus_node.hpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/include/dodo_canbus/canbus_node.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -633,7 +633,7 @@ CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp \
  /usr/include/nlohmann/json.hpp /usr/include/c++/11/cstddef \
  /usr/include/nlohmann/adl_serializer.hpp \
  /usr/include/nlohmann/detail/conversions/from_json.hpp \

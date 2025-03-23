@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_bringup
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup/CMakeFiles /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup/CMakeFiles /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_bringup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,6 +197,104 @@ dodo_bringup_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dodo_bringup_uninstall.dir/build.make CMakeFiles/dodo_bringup_uninstall.dir/build
 .PHONY : dodo_bringup_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named state_manager_node
+
+# Build rule for target.
+state_manager_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 state_manager_node
+.PHONY : state_manager_node
+
+# fast build rule for target.
+state_manager_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/build
+.PHONY : state_manager_node/fast
+
+#=============================================================================
+# Target rules for targets named parameter_debugging_node
+
+# Build rule for target.
+parameter_debugging_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_debugging_node
+.PHONY : parameter_debugging_node
+
+# fast build rule for target.
+parameter_debugging_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parameter_debugging_node.dir/build.make CMakeFiles/parameter_debugging_node.dir/build
+.PHONY : parameter_debugging_node/fast
+
+src/parameter_debugging_node.o: src/parameter_debugging_node.cpp.o
+.PHONY : src/parameter_debugging_node.o
+
+# target to build an object file
+src/parameter_debugging_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parameter_debugging_node.dir/build.make CMakeFiles/parameter_debugging_node.dir/src/parameter_debugging_node.cpp.o
+.PHONY : src/parameter_debugging_node.cpp.o
+
+src/parameter_debugging_node.i: src/parameter_debugging_node.cpp.i
+.PHONY : src/parameter_debugging_node.i
+
+# target to preprocess a source file
+src/parameter_debugging_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parameter_debugging_node.dir/build.make CMakeFiles/parameter_debugging_node.dir/src/parameter_debugging_node.cpp.i
+.PHONY : src/parameter_debugging_node.cpp.i
+
+src/parameter_debugging_node.s: src/parameter_debugging_node.cpp.s
+.PHONY : src/parameter_debugging_node.s
+
+# target to generate assembly for a file
+src/parameter_debugging_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parameter_debugging_node.dir/build.make CMakeFiles/parameter_debugging_node.dir/src/parameter_debugging_node.cpp.s
+.PHONY : src/parameter_debugging_node.cpp.s
+
+src/robot_state_machine.o: src/robot_state_machine.cpp.o
+.PHONY : src/robot_state_machine.o
+
+# target to build an object file
+src/robot_state_machine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/robot_state_machine.cpp.o
+.PHONY : src/robot_state_machine.cpp.o
+
+src/robot_state_machine.i: src/robot_state_machine.cpp.i
+.PHONY : src/robot_state_machine.i
+
+# target to preprocess a source file
+src/robot_state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/robot_state_machine.cpp.i
+.PHONY : src/robot_state_machine.cpp.i
+
+src/robot_state_machine.s: src/robot_state_machine.cpp.s
+.PHONY : src/robot_state_machine.s
+
+# target to generate assembly for a file
+src/robot_state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/robot_state_machine.cpp.s
+.PHONY : src/robot_state_machine.cpp.s
+
+src/state_manager_node.o: src/state_manager_node.cpp.o
+.PHONY : src/state_manager_node.o
+
+# target to build an object file
+src/state_manager_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/state_manager_node.cpp.o
+.PHONY : src/state_manager_node.cpp.o
+
+src/state_manager_node.i: src/state_manager_node.cpp.i
+.PHONY : src/state_manager_node.i
+
+# target to preprocess a source file
+src/state_manager_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/state_manager_node.cpp.i
+.PHONY : src/state_manager_node.cpp.i
+
+src/state_manager_node.s: src/state_manager_node.cpp.s
+.PHONY : src/state_manager_node.s
+
+# target to generate assembly for a file
+src/state_manager_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_manager_node.dir/build.make CMakeFiles/state_manager_node.dir/src/state_manager_node.cpp.s
+.PHONY : src/state_manager_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +310,17 @@ help:
 	@echo "... test"
 	@echo "... dodo_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... parameter_debugging_node"
+	@echo "... state_manager_node"
+	@echo "... src/parameter_debugging_node.o"
+	@echo "... src/parameter_debugging_node.i"
+	@echo "... src/parameter_debugging_node.s"
+	@echo "... src/robot_state_machine.o"
+	@echo "... src/robot_state_machine.i"
+	@echo "... src/robot_state_machine.s"
+	@echo "... src/state_manager_node.o"
+	@echo "... src/state_manager_node.i"
+	@echo "... src/state_manager_node.s"
 .PHONY : help
 
 

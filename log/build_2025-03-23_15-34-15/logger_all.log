@@ -1,0 +1,752 @@
+[0.275s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.275s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x78c7118b6fe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78c711a64130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78c711a64130>>)
+[0.919s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.919s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.920s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ub/dodo/dodo_robot_ROS2'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['ignore', 'ignore_ament_install']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ignore'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ignore_ament_install'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['colcon_pkg']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'colcon_pkg'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['colcon_meta']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'colcon_meta'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['ros']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'ros'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['cmake', 'python']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'cmake'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'python'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extensions ['python_setup_py']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(media) by extension 'python_setup_py'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extension 'ignore'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extension 'ignore_ament_install'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extensions ['colcon_pkg']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extension 'colcon_pkg'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extensions ['colcon_meta']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extension 'colcon_meta'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extensions ['ros']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_bringup) by extension 'ros'
+[0.968s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_bringup' with type 'ros.ament_cmake' and name 'dodo_bringup'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extensions ['ignore', 'ignore_ament_install']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extension 'ignore'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extension 'ignore_ament_install'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extensions ['colcon_pkg']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extension 'colcon_pkg'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extensions ['colcon_meta']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extension 'colcon_meta'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extensions ['ros']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_canbus) by extension 'ros'
+[0.971s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_canbus' with type 'ros.ament_cmake' and name 'dodo_canbus'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extension 'ignore'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extension 'ignore_ament_install'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extensions ['colcon_pkg']
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extension 'colcon_pkg'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extensions ['colcon_meta']
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extension 'colcon_meta'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extensions ['ros']
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_imu) by extension 'ros'
+[0.974s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_imu' with type 'ros.ament_cmake' and name 'dodo_imu'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extensions ['ignore', 'ignore_ament_install']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extension 'ignore'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extension 'ignore_ament_install'
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extensions ['colcon_pkg']
+[0.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extension 'colcon_pkg'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extensions ['colcon_meta']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extension 'colcon_meta'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extensions ['ros']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_monitor) by extension 'ros'
+[0.978s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_monitor' with type 'ros.ament_cmake' and name 'dodo_monitor'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extension 'ignore'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extensions ['colcon_pkg']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extension 'colcon_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extensions ['colcon_meta']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extension 'colcon_meta'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extensions ['ros']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_msgs) by extension 'ros'
+[0.980s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_msgs' with type 'ros.ament_cmake' and name 'dodo_msgs'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extensions ['ignore', 'ignore_ament_install']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extension 'ignore'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extension 'ignore_ament_install'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extensions ['colcon_pkg']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extension 'colcon_pkg'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extensions ['colcon_meta']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extension 'colcon_meta'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extensions ['ros']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_processing) by extension 'ros'
+[0.984s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_processing' with type 'ros.ament_cmake' and name 'dodo_processing'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extensions ['colcon_pkg']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extension 'colcon_pkg'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extensions ['colcon_meta']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extension 'colcon_meta'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extensions ['ros']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_rl) by extension 'ros'
+[0.988s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_rl' with type 'ros.ament_cmake' and name 'dodo_rl'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'ignore'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'ignore_ament_install'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['colcon_pkg']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'colcon_pkg'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['colcon_meta']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'colcon_meta'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['ros']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'ros'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['cmake', 'python']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'cmake'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'python'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extensions ['python_setup_py']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_robot_ws) by extension 'python_setup_py'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extensions ['ignore', 'ignore_ament_install']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extension 'ignore'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extension 'ignore_ament_install'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extensions ['colcon_pkg']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extension 'colcon_pkg'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extensions ['colcon_meta']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extension 'colcon_meta'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extensions ['ros']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_safety) by extension 'ros'
+[0.995s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_safety' with type 'ros.ament_cmake' and name 'dodo_safety'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extensions ['ignore', 'ignore_ament_install']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extension 'ignore'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extension 'ignore_ament_install'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extensions ['colcon_pkg']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extension 'colcon_pkg'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extensions ['colcon_meta']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extension 'colcon_meta'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extensions ['ros']
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_sensor_fusion) by extension 'ros'
+[0.999s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_sensor_fusion' with type 'ros.ament_cmake' and name 'dodo_sensor_fusion'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extensions ['ignore', 'ignore_ament_install']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extension 'ignore'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extension 'ignore_ament_install'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extensions ['colcon_pkg']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extension 'colcon_pkg'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extensions ['colcon_meta']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extension 'colcon_meta'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extensions ['ros']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/dodo_usb_command) by extension 'ros'
+[1.004s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dodo_usb_command' with type 'ros.ament_cmake' and name 'dodo_usb_command'
+[1.004s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.070s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.191s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_args' from command line to 'None'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_target' from command line to 'None'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_clean_cache' from command line to 'False'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_clean_first' from command line to 'False'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'cmake_force_configure' from command line to 'False'
+[1.192s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'ament_cmake_args' from command line to 'None'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'catkin_cmake_args' from command line to 'None'
+[1.193s] Level 5:colcon.colcon_core.verb:set package 'dodo_canbus' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.193s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_canbus' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus', 'symlink_install': True, 'test_result_base': None}
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_args' from command line to 'None'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_target' from command line to 'None'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_clean_cache' from command line to 'False'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_clean_first' from command line to 'False'
+[1.195s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'cmake_force_configure' from command line to 'False'
+[1.196s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'ament_cmake_args' from command line to 'None'
+[1.196s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'catkin_cmake_args' from command line to 'None'
+[1.196s] Level 5:colcon.colcon_core.verb:set package 'dodo_imu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.196s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_imu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_imu', 'symlink_install': True, 'test_result_base': None}
+[1.197s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_args' from command line to 'None'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_target' from command line to 'None'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.198s] Level 5:colcon.colcon_core.verb:set package 'dodo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.198s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_args' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_target' from command line to 'None'
+[1.199s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_clean_cache' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_clean_first' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'cmake_force_configure' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'ament_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'catkin_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'dodo_rl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.200s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_rl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_rl', 'symlink_install': True, 'test_result_base': None}
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_args' from command line to 'None'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_target' from command line to 'None'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_clean_cache' from command line to 'False'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_clean_first' from command line to 'False'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'cmake_force_configure' from command line to 'False'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'ament_cmake_args' from command line to 'None'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'catkin_cmake_args' from command line to 'None'
+[1.201s] Level 5:colcon.colcon_core.verb:set package 'dodo_usb_command' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.202s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_usb_command' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command', 'symlink_install': True, 'test_result_base': None}
+[1.202s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_args' from command line to 'None'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_target' from command line to 'None'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_clean_first' from command line to 'False'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'cmake_force_configure' from command line to 'False'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'ament_cmake_args' from command line to 'None'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.203s] Level 5:colcon.colcon_core.verb:set package 'dodo_monitor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.203s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_monitor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor', 'symlink_install': True, 'test_result_base': None}
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_args' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_target' from command line to 'None'
+[1.204s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_clean_cache' from command line to 'False'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_clean_first' from command line to 'False'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'cmake_force_configure' from command line to 'False'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'ament_cmake_args' from command line to 'None'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'catkin_cmake_args' from command line to 'None'
+[1.205s] Level 5:colcon.colcon_core.verb:set package 'dodo_processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.205s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_processing', 'symlink_install': True, 'test_result_base': None}
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_args' from command line to 'None'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_target' from command line to 'None'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_clean_cache' from command line to 'False'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_clean_first' from command line to 'False'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'cmake_force_configure' from command line to 'False'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'ament_cmake_args' from command line to 'None'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'catkin_cmake_args' from command line to 'None'
+[1.207s] Level 5:colcon.colcon_core.verb:set package 'dodo_safety' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.208s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_safety' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_safety', 'symlink_install': True, 'test_result_base': None}
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_args' from command line to 'None'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_target' from command line to 'None'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_clean_cache' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_clean_first' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'cmake_force_configure' from command line to 'False'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'ament_cmake_args' from command line to 'None'
+[1.209s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'catkin_cmake_args' from command line to 'None'
+[1.210s] Level 5:colcon.colcon_core.verb:set package 'dodo_sensor_fusion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.210s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_sensor_fusion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_sensor_fusion', 'symlink_install': True, 'test_result_base': None}
+[1.211s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_args' from command line to 'None'
+[1.211s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_target' from command line to 'None'
+[1.211s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'dodo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.212s] DEBUG:colcon.colcon_core.verb:Building package 'dodo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup', 'merge_install': False, 'path': '/home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup', 'symlink_install': True, 'test_result_base': None}
+[1.212s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.217s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs' with build type 'ament_cmake'
+[1.218s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs'
+[1.226s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.241s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus' with build type 'ament_cmake'
+[1.242s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus'
+[1.243s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.244s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs -- -j2 -l2
+[1.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[1.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[1.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
+[2.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_canbus)
+[2.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
+[2.023s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus' for CMake module files
+[2.025s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus' for CMake config files
+[2.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_canbus', 'cmake_prefix_path')
+[2.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.dsv'
+[2.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.sh'
+[2.035s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib'
+[2.035s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/bin'
+[2.036s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/pkgconfig/dodo_canbus.pc'
+[2.036s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/python3.10/site-packages'
+[2.037s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/bin'
+[2.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.ps1'
+[2.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.dsv'
+[2.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.sh'
+[2.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.bash'
+[2.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.zsh'
+[2.048s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/colcon-core/packages/dodo_canbus)
+[2.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_canbus)
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus' for CMake module files
+[2.053s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus' for CMake config files
+[2.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_canbus', 'cmake_prefix_path')
+[2.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.ps1'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.dsv'
+[2.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/hook/cmake_prefix_path.sh'
+[2.060s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib'
+[2.060s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/bin'
+[2.061s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/pkgconfig/dodo_canbus.pc'
+[2.062s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/python3.10/site-packages'
+[2.062s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/bin'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.ps1'
+[2.066s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.dsv'
+[2.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.sh'
+[2.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.bash'
+[2.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.zsh'
+[2.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/colcon-core/packages/dodo_canbus)
+[2.081s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_imu' with build type 'ament_cmake'
+[2.083s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_imu'
+[2.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.085s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_imu -- -j2 -l2
+[2.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_imu -- -j2 -l2
+[2.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_imu
+[2.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_imu)
+[2.627s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu' for CMake module files
+[2.628s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu' for CMake config files
+[2.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_imu', 'cmake_prefix_path')
+[2.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.ps1'
+[2.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.dsv'
+[2.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.sh'
+[2.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_imu
+[2.642s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib'
+[2.643s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/bin'
+[2.645s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib/pkgconfig/dodo_imu.pc'
+[2.646s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib/python3.10/site-packages'
+[2.646s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/bin'
+[2.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.ps1'
+[2.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.dsv'
+[2.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.sh'
+[2.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.bash'
+[2.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.zsh'
+[2.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/colcon-core/packages/dodo_imu)
+[2.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_imu)
+[2.675s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu' for CMake module files
+[2.681s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu' for CMake config files
+[2.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_imu', 'cmake_prefix_path')
+[2.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.ps1'
+[2.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.dsv'
+[2.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/hook/cmake_prefix_path.sh'
+[2.693s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib'
+[2.693s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/bin'
+[2.694s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib/pkgconfig/dodo_imu.pc'
+[2.695s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/lib/python3.10/site-packages'
+[2.697s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/bin'
+[2.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.ps1'
+[2.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.dsv'
+[2.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.sh'
+[2.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.bash'
+[2.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/dodo_imu/package.zsh'
+[2.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu/share/colcon-core/packages/dodo_imu)
+[2.711s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_rl' with build type 'ament_cmake'
+[2.718s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_rl'
+[2.722s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
+[3.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
+[3.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl
+[3.329s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_rl)
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl' for CMake module files
+[3.333s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl' for CMake config files
+[3.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl
+[3.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_rl', 'cmake_prefix_path')
+[3.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.ps1'
+[3.339s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.dsv'
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.sh'
+[3.351s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib'
+[3.352s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/bin'
+[3.354s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib/pkgconfig/dodo_rl.pc'
+[3.356s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib/python3.10/site-packages'
+[3.357s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/bin'
+[3.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.ps1'
+[3.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.dsv'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.sh'
+[3.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.bash'
+[3.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.zsh'
+[3.370s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/colcon-core/packages/dodo_rl)
+[3.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_rl)
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl' for CMake module files
+[3.376s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl' for CMake config files
+[3.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_rl', 'cmake_prefix_path')
+[3.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.ps1'
+[3.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.dsv'
+[3.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/hook/cmake_prefix_path.sh'
+[3.383s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib'
+[3.384s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/bin'
+[3.385s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib/pkgconfig/dodo_rl.pc'
+[3.386s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib/python3.10/site-packages'
+[3.386s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/bin'
+[3.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.ps1'
+[3.389s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.dsv'
+[3.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.sh'
+[3.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.bash'
+[3.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.zsh'
+[3.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/colcon-core/packages/dodo_rl)
+[3.399s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command' with build type 'ament_cmake'
+[3.401s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command'
+[3.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.403s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command -- -j2 -l2
+[3.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs -- -j2 -l2
+[3.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
+[3.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command -- -j2 -l2
+[3.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command
+[3.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_usb_command)
+[3.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command
+[3.837s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command' for CMake module files
+[3.846s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command' for CMake config files
+[3.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_usb_command', 'cmake_prefix_path')
+[3.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.ps1'
+[3.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.dsv'
+[3.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.sh'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/bin'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib/pkgconfig/dodo_usb_command.pc'
+[3.863s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib/python3.10/site-packages'
+[3.863s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/bin'
+[3.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.ps1'
+[3.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.dsv'
+[3.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.sh'
+[3.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.bash'
+[3.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.zsh'
+[3.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/colcon-core/packages/dodo_usb_command)
+[3.874s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_usb_command)
+[3.875s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command' for CMake module files
+[3.877s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command' for CMake config files
+[3.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_usb_command', 'cmake_prefix_path')
+[3.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.ps1'
+[3.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.dsv'
+[3.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/hook/cmake_prefix_path.sh'
+[3.885s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib'
+[3.885s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/bin'
+[3.885s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib/pkgconfig/dodo_usb_command.pc'
+[3.886s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/lib/python3.10/site-packages'
+[3.887s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/bin'
+[3.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.ps1'
+[3.889s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.dsv'
+[3.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.sh'
+[3.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.bash'
+[3.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/dodo_usb_command/package.zsh'
+[3.895s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command/share/colcon-core/packages/dodo_usb_command)
+[3.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_msgs)
+[3.900s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs' for CMake module files
+[3.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
+[3.903s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs' for CMake config files
+[3.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_msgs', 'cmake_prefix_path')
+[3.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.ps1'
+[3.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.dsv'
+[3.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.sh'
+[3.909s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib'
+[3.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_msgs', 'ld_library_path_lib')
+[3.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.ps1'
+[3.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.dsv'
+[3.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.sh'
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/bin'
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/pkgconfig/dodo_msgs.pc'
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/python3.10/site-packages'
+[3.914s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/bin'
+[3.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.ps1'
+[3.916s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.dsv'
+[3.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.sh'
+[3.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.bash'
+[3.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.zsh'
+[3.922s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/colcon-core/packages/dodo_msgs)
+[3.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_msgs)
+[3.924s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs' for CMake module files
+[3.926s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs' for CMake config files
+[3.928s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_msgs', 'cmake_prefix_path')
+[3.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.ps1'
+[3.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.dsv'
+[3.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/cmake_prefix_path.sh'
+[3.936s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib'
+[3.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_msgs', 'ld_library_path_lib')
+[3.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.ps1'
+[3.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.dsv'
+[3.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/hook/ld_library_path_lib.sh'
+[3.943s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/bin'
+[3.943s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/pkgconfig/dodo_msgs.pc'
+[3.944s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/python3.10/site-packages'
+[3.945s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/bin'
+[3.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.ps1'
+[3.947s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.dsv'
+[3.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.sh'
+[3.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.bash'
+[3.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.zsh'
+[3.956s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/colcon-core/packages/dodo_msgs)
+[3.957s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor' with build type 'ament_cmake'
+[3.959s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor'
+[3.959s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.960s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.976s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_processing' with build type 'ament_cmake'
+[3.976s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_processing'
+[3.977s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.977s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor -- -j2 -l2
+[4.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_processing': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_processing -- -j2 -l2
+[4.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor -- -j2 -l2
+[4.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
+[4.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_processing' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_processing -- -j2 -l2
+[4.340s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_processing': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_processing
+[4.409s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_monitor)
+[4.410s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor' for CMake module files
+[4.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
+[4.417s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor' for CMake config files
+[4.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_monitor', 'cmake_prefix_path')
+[4.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.ps1'
+[4.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.dsv'
+[4.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.sh'
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib'
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/bin'
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib/pkgconfig/dodo_monitor.pc'
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib/python3.10/site-packages'
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/bin'
+[4.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.ps1'
+[4.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.dsv'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.sh'
+[4.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.bash'
+[4.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.zsh'
+[4.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/colcon-core/packages/dodo_monitor)
+[4.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_monitor)
+[4.439s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor' for CMake module files
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor' for CMake config files
+[4.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_monitor', 'cmake_prefix_path')
+[4.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.ps1'
+[4.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.dsv'
+[4.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/hook/cmake_prefix_path.sh'
+[4.454s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib'
+[4.454s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/bin'
+[4.454s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib/pkgconfig/dodo_monitor.pc'
+[4.455s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib/python3.10/site-packages'
+[4.456s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/bin'
+[4.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.ps1'
+[4.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.dsv'
+[4.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.sh'
+[4.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.bash'
+[4.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.zsh'
+[4.470s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/colcon-core/packages/dodo_monitor)
+[4.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_safety' with build type 'ament_cmake'
+[4.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_safety'
+[4.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_processing)
+[4.491s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing' for CMake module files
+[4.493s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing' for CMake config files
+[4.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_processing', 'cmake_prefix_path')
+[4.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.ps1'
+[4.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_processing' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_processing
+[4.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.dsv'
+[4.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.sh'
+[4.504s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib'
+[4.504s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/bin'
+[4.505s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib/pkgconfig/dodo_processing.pc'
+[4.505s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib/python3.10/site-packages'
+[4.507s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/bin'
+[4.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.ps1'
+[4.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.dsv'
+[4.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.sh'
+[4.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.bash'
+[4.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.zsh'
+[4.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/colcon-core/packages/dodo_processing)
+[4.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_processing)
+[4.518s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing' for CMake module files
+[4.520s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing' for CMake config files
+[4.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_processing', 'cmake_prefix_path')
+[4.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.ps1'
+[4.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.dsv'
+[4.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/hook/cmake_prefix_path.sh'
+[4.527s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib'
+[4.528s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/bin'
+[4.528s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib/pkgconfig/dodo_processing.pc'
+[4.529s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/lib/python3.10/site-packages'
+[4.529s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/bin'
+[4.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.ps1'
+[4.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.dsv'
+[4.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.sh'
+[4.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.bash'
+[4.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/dodo_processing/package.zsh'
+[4.539s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing/share/colcon-core/packages/dodo_processing)
+[4.542s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_sensor_fusion' with build type 'ament_cmake'
+[4.543s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_sensor_fusion'
+[4.544s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety -- -j2 -l2
+[4.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion -- -j2 -l2
+[4.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion -- -j2 -l2
+[4.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion
+[4.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety -- -j2 -l2
+[4.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
+[4.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_sensor_fusion)
+[4.908s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion' for CMake module files
+[4.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion
+[4.919s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion' for CMake config files
+[4.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_sensor_fusion', 'cmake_prefix_path')
+[4.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.ps1'
+[4.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.dsv'
+[4.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.sh'
+[4.929s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib'
+[4.929s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/bin'
+[4.930s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib/pkgconfig/dodo_sensor_fusion.pc'
+[4.930s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib/python3.10/site-packages'
+[4.931s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/bin'
+[4.932s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.ps1'
+[4.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.dsv'
+[4.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.sh'
+[4.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.bash'
+[4.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.zsh'
+[4.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/colcon-core/packages/dodo_sensor_fusion)
+[4.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_sensor_fusion)
+[4.941s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion' for CMake module files
+[4.942s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion' for CMake config files
+[4.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_sensor_fusion', 'cmake_prefix_path')
+[4.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.ps1'
+[4.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.dsv'
+[4.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/hook/cmake_prefix_path.sh'
+[4.954s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib'
+[4.954s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/bin'
+[4.954s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib/pkgconfig/dodo_sensor_fusion.pc'
+[4.955s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/lib/python3.10/site-packages'
+[4.956s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/bin'
+[4.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.ps1'
+[4.958s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.dsv'
+[4.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.sh'
+[4.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.bash'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/dodo_sensor_fusion/package.zsh'
+[4.963s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion/share/colcon-core/packages/dodo_sensor_fusion)
+[4.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_safety)
+[4.969s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety' for CMake module files
+[4.971s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety' for CMake config files
+[4.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_safety', 'cmake_prefix_path')
+[4.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
+[4.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.ps1'
+[4.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.dsv'
+[4.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.sh'
+[4.976s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/bin'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib/pkgconfig/dodo_safety.pc'
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib/python3.10/site-packages'
+[4.978s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/bin'
+[4.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.ps1'
+[4.980s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.dsv'
+[4.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.sh'
+[4.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.bash'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.zsh'
+[4.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/colcon-core/packages/dodo_safety)
+[4.990s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_safety)
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety' for CMake module files
+[4.992s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety' for CMake config files
+[4.993s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_safety', 'cmake_prefix_path')
+[4.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.ps1'
+[4.997s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.dsv'
+[4.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/hook/cmake_prefix_path.sh'
+[5.001s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib'
+[5.002s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/bin'
+[5.002s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib/pkgconfig/dodo_safety.pc'
+[5.002s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib/python3.10/site-packages'
+[5.003s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/bin'
+[5.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.ps1'
+[5.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.dsv'
+[5.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.sh'
+[5.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.bash'
+[5.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.zsh'
+[5.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/colcon-core/packages/dodo_safety)
+[5.016s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup' with build type 'ament_cmake'
+[5.016s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup'
+[5.017s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.017s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup -- -j2 -l2
+[69.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup -- -j2 -l2
+[69.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
+[69.283s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_bringup)
+[69.284s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup' for CMake module files
+[69.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
+[69.287s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup' for CMake config files
+[69.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_bringup', 'cmake_prefix_path')
+[69.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.ps1'
+[69.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.dsv'
+[69.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.sh'
+[69.293s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib'
+[69.293s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/bin'
+[69.293s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/pkgconfig/dodo_bringup.pc'
+[69.294s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/python3.10/site-packages'
+[69.294s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/bin'
+[69.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.ps1'
+[69.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.dsv'
+[69.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.sh'
+[69.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.bash'
+[69.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.zsh'
+[69.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/colcon-core/packages/dodo_bringup)
+[69.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dodo_bringup)
+[69.303s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup' for CMake module files
+[69.304s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup' for CMake config files
+[69.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('dodo_bringup', 'cmake_prefix_path')
+[69.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.ps1'
+[69.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.dsv'
+[69.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/hook/cmake_prefix_path.sh'
+[69.311s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib'
+[69.311s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/bin'
+[69.311s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/pkgconfig/dodo_bringup.pc'
+[69.312s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/python3.10/site-packages'
+[69.313s] Level 1:colcon.colcon_core.environment:checking '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/bin'
+[69.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.ps1'
+[69.316s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.dsv'
+[69.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.sh'
+[69.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.bash'
+[69.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.zsh'
+[69.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/colcon-core/packages/dodo_bringup)
+[69.324s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[69.325s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[69.326s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[69.326s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[69.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[69.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[69.344s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[69.424s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[69.425s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ub/dodo/dodo_robot_ROS2/install/local_setup.ps1'
+[69.428s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ub/dodo/dodo_robot_ROS2/install/_local_setup_util_ps1.py'
+[69.431s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ub/dodo/dodo_robot_ROS2/install/setup.ps1'
+[69.433s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ub/dodo/dodo_robot_ROS2/install/local_setup.sh'
+[69.435s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ub/dodo/dodo_robot_ROS2/install/_local_setup_util_sh.py'
+[69.437s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ub/dodo/dodo_robot_ROS2/install/setup.sh'
+[69.440s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ub/dodo/dodo_robot_ROS2/install/local_setup.bash'
+[69.442s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ub/dodo/dodo_robot_ROS2/install/setup.bash'
+[69.446s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ub/dodo/dodo_robot_ROS2/install/local_setup.zsh'
+[69.449s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ub/dodo/dodo_robot_ROS2/install/setup.zsh'

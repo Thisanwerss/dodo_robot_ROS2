@@ -1,0 +1,60 @@
+[0.052s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup -- -j2 -l2
+[0.123s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.502s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.526s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.635s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.649s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.684s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.722s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.777s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.914s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.923s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.300s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.389s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.491s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.523s] -- Looking for pthread.h
+[1.867s] -- Looking for pthread.h - found
+[1.867s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.130s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.135s] -- Found Threads: TRUE  
+[2.311s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.397s] -- Found dodo_msgs: 0.1.0 (/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake)
+[2.438s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+[2.699s] -- Configuring done
+[2.763s] -- Generating done
+[2.780s] -- Build files have been written to: /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
+[2.894s] [ 20%] [32mBuilding CXX object CMakeFiles/parameter_debugging_node.dir/src/parameter_debugging_node.cpp.o[0m
+[2.896s] [ 40%] [32mBuilding CXX object CMakeFiles/state_manager_node.dir/src/state_manager_node.cpp.o[0m
+[27.429s] [ 60%] [32m[1mLinking CXX executable parameter_debugging_node[0m
+[28.475s] [ 60%] Built target parameter_debugging_node
+[28.503s] [ 80%] [32mBuilding CXX object CMakeFiles/state_manager_node.dir/src/robot_state_machine.cpp.o[0m
+[61.796s] [100%] [32m[1mLinking CXX executable state_manager_node[0m
+[64.047s] [100%] Built target state_manager_node
+[64.082s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup -- -j2 -l2
+[64.088s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup
+[64.124s] -- Install configuration: ""
+[64.127s] -- Execute custom install script
+[64.129s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/dodo_bringup/state_manager_node
+[64.153s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/lib/dodo_bringup/parameter_debugging_node
+[64.181s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/launch/dodo_robot.launch.py
+[64.181s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/launch/hardware.launch.py
+[64.184s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/launch/simulation.launch.py
+[64.185s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/launch/state_manager.launch.py
+[64.185s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/include/dodo_bringup/dodo_bringup/robot_state_machine.hpp
+[64.219s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/include/dodo_bringup/dodo_bringup/state_manager_node.hpp
+[64.241s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/ament_index/resource_index/package_run_dependencies/dodo_bringup
+[64.243s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/ament_index/resource_index/parent_prefix_path/dodo_bringup
+[64.244s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/environment/ament_prefix_path.sh
+[64.244s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/environment/ament_prefix_path.dsv
+[64.245s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/environment/path.sh
+[64.245s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/environment/path.dsv
+[64.245s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/local_setup.bash
+[64.245s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/local_setup.sh
+[64.245s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/local_setup.zsh
+[64.246s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/local_setup.dsv
+[64.246s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.dsv
+[64.264s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/ament_index/resource_index/packages/dodo_bringup
+[64.265s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/cmake/dodo_bringupConfig.cmake
+[64.265s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/cmake/dodo_bringupConfig-version.cmake
+[64.265s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_bringup/share/dodo_bringup/package.xml
+[64.270s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_sensor_fusion:/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety:/home/ub/dodo/dodo_robot_ROS2/install/dodo_processing:/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor:/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command:/home/ub/dodo/dodo_robot_ROS2/install/dodo_rl:/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/home/ub/dodo/dodo_robot_ROS2/install/dodo_imu:/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_bringup

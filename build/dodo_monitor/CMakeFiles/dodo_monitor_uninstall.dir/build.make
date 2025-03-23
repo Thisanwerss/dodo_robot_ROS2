@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
 
 # Utility rule file for dodo_monitor_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dodo_monitor_uninstall.dir/compiler_depend.make
 include CMakeFiles/dodo_monitor_uninstall.dir/progress.make
 
 CMakeFiles/dodo_monitor_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dodo_monitor_uninstall: CMakeFiles/dodo_monitor_uninstall
 dodo_monitor_uninstall: CMakeFiles/dodo_monitor_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dodo_monitor_uninstall.dir/clean:
 .PHONY : CMakeFiles/dodo_monitor_uninstall.dir/clean
 
 CMakeFiles/dodo_monitor_uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor/CMakeFiles/dodo_monitor_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/CMakeFiles/dodo_monitor_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_monitor_uninstall.dir/depend
 

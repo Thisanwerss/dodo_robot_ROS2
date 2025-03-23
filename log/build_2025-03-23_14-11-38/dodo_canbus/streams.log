@@ -1,0 +1,70 @@
+[0.060s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.559s] -- The CXX compiler identification is GNU 11.4.0
+[0.629s] -- Detecting C compiler ABI info
+[0.932s] -- Detecting C compiler ABI info - done
+[0.962s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.963s] -- Detecting C compile features
+[0.964s] -- Detecting C compile features - done
+[0.978s] -- Detecting CXX compiler ABI info
+[1.338s] -- Detecting CXX compiler ABI info - done
+[1.361s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.361s] -- Detecting CXX compile features
+[1.361s] -- Detecting CXX compile features - done
+[1.362s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.162s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.438s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.488s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.610s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.635s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.664s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.777s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.893s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.348s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.397s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.759s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.839s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.993s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.011s] -- Looking for pthread.h
+[4.274s] -- Looking for pthread.h - found
+[4.278s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.644s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.649s] -- Found Threads: TRUE  
+[4.813s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.194s] -- Configuring done
+[5.254s] -- Generating done
+[5.277s] -- Build files have been written to: /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
+[5.309s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus
+[5.310s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[5.483s] [ 33%] [32mBuilding CXX object CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o[0m
+[5.509s] [ 66%] [32mBuilding CXX object CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o[0m
+[7.728s] [01m[K/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp:[m[K In member function ‘[01m[Kbool dodo_canbus::OdriveCANInterface::readMotorState(int, dodo_canbus::MotorState&)[m[K’:
+[7.729s] [01m[K/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp:109:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.730s]   109 | bool OdriveCANInterface::readMotorState([01;35m[Kint motor_id[m[K, MotorState & state)
+[7.730s]       |                                         [01;35m[K~~~~^~~~~~~~[m[K
+[66.610s] [100%] [32m[1mLinking CXX executable canbus_node[0m
+[68.591s] [100%] Built target canbus_node
+[68.661s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[68.681s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
+[68.706s] -- Install configuration: ""
+[68.708s] -- Execute custom install script
+[68.711s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/dodo_canbus/canbus_node
+[68.740s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/launch/canbus_node.launch.py
+[68.785s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/include//dodo_canbus/canbus_node.hpp
+[68.814s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/include//dodo_canbus/odrive_can.hpp
+[68.841s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/package_run_dependencies/dodo_canbus
+[68.868s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/parent_prefix_path/dodo_canbus
+[68.907s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.sh
+[68.949s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.dsv
+[68.999s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/path.sh
+[69.049s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/path.dsv
+[69.095s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.bash
+[69.138s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.sh
+[69.168s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.zsh
+[69.195s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.dsv
+[69.221s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.dsv
+[69.244s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/packages/dodo_canbus
+[69.267s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig.cmake
+[69.297s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig-version.cmake
+[69.323s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.xml
+[69.353s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus

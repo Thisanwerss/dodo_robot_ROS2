@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_rl/ament_cmake_environment_hooks/local_setup.bash
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl/ament_cmake_environment_hooks/local_setup.bash

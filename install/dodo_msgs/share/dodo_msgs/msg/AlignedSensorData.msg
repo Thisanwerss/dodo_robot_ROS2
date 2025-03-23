@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs/msg/AlignedSensorData.msg
+/home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs/msg/AlignedSensorData.msg

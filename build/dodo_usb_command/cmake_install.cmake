@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command
+# Install script for directory: /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_usb_command")
+  set(CMAKE_INSTALL_PREFIX "/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

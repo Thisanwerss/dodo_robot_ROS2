@@ -1,7 +1,7 @@
 CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/src/odrive_can.cpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/include/dodo_canbus/odrive_can.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

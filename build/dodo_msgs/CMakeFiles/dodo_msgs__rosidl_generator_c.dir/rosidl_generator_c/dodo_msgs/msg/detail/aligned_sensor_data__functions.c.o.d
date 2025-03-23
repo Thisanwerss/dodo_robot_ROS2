@@ -1,7 +1,7 @@
 CMakeFiles/dodo_msgs__rosidl_generator_c.dir/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.c.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.c \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.c \
  /usr/include/stdc-predef.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -43,8 +43,8 @@ CMakeFiles/dodo_msgs__rosidl_generator_c.dir/rosidl_generator_c/dodo_msgs/msg/de
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

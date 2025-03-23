@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
 
 # Utility rule file for dodo_safety_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dodo_safety_uninstall.dir/compiler_depend.make
 include CMakeFiles/dodo_safety_uninstall.dir/progress.make
 
 CMakeFiles/dodo_safety_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dodo_safety_uninstall: CMakeFiles/dodo_safety_uninstall
 dodo_safety_uninstall: CMakeFiles/dodo_safety_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dodo_safety_uninstall.dir/clean:
 .PHONY : CMakeFiles/dodo_safety_uninstall.dir/clean
 
 CMakeFiles/dodo_safety_uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/CMakeFiles/dodo_safety_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/CMakeFiles/dodo_safety_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_safety_uninstall.dir/depend
 

@@ -1,0 +1,65 @@
+[0.069s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor
+[0.271s] -- The C compiler identification is GNU 11.4.0
+[0.462s] -- The CXX compiler identification is GNU 11.4.0
+[0.485s] -- Detecting C compiler ABI info
+[0.743s] -- Detecting C compiler ABI info - done
+[0.774s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.777s] -- Detecting C compile features
+[0.781s] -- Detecting C compile features - done
+[0.797s] -- Detecting CXX compiler ABI info
+[1.128s] -- Detecting CXX compiler ABI info - done
+[1.154s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.155s] -- Detecting CXX compile features
+[1.157s] -- Detecting CXX compile features - done
+[1.161s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.654s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.888s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.959s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.088s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.114s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.140s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.180s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.231s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.428s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.450s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.683s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.740s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.825s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.846s] -- Looking for pthread.h
+[3.079s] -- Looking for pthread.h - found
+[3.086s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.319s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.341s] -- Found Threads: TRUE  
+[3.476s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[3.504s] -- Found dodo_msgs: 0.1.0 (/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake)
+[3.898s] -- Configuring done
+[3.958s] -- Generating done
+[3.978s] -- Build files have been written to: /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
+[3.993s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor
+[3.995s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor -- -j2 -l2
+[4.145s] [ 50%] [32mBuilding CXX object CMakeFiles/monitor_node.dir/src/monitor_node.cpp.o[0m
+[38.048s] [100%] [32m[1mLinking CXX executable monitor_node[0m
+[39.789s] [100%] Built target monitor_node
+[39.824s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor -- -j2 -l2
+[39.837s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
+[39.854s] -- Install configuration: ""
+[39.857s] -- Execute custom install script
+[39.859s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/lib/dodo_monitor/monitor_node
+[39.882s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/launch/monitor_node.launch.py
+[39.904s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/include//dodo_monitor/monitor_node.hpp
+[39.930s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/ament_index/resource_index/package_run_dependencies/dodo_monitor
+[39.959s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/ament_index/resource_index/parent_prefix_path/dodo_monitor
+[39.987s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/environment/ament_prefix_path.sh
+[40.011s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/environment/ament_prefix_path.dsv
+[40.036s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/environment/path.sh
+[40.067s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/environment/path.dsv
+[40.094s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/local_setup.bash
+[40.127s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/local_setup.sh
+[40.160s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/local_setup.zsh
+[40.202s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/local_setup.dsv
+[40.243s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.dsv
+[40.276s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/ament_index/resource_index/packages/dodo_monitor
+[40.303s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/cmake/dodo_monitorConfig.cmake
+[40.333s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/cmake/dodo_monitorConfig-version.cmake
+[40.363s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_monitor/share/dodo_monitor/package.xml
+[40.398s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor

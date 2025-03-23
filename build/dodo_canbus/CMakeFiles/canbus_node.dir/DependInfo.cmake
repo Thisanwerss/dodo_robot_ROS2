@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/src/canbus_node.cpp" "CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o" "gcc" "CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o.d"
-  "/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus/src/odrive_can.cpp" "CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o" "gcc" "CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o.d"
+  "/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/canbus_node.cpp" "CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o" "gcc" "CMakeFiles/canbus_node.dir/src/canbus_node.cpp.o.d"
+  "/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp" "CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o" "gcc" "CMakeFiles/canbus_node.dir/src/odrive_can.cpp.o.d"
   )
 
 # Targets to which this target links.

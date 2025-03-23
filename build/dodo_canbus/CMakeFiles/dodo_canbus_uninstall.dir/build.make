@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
 
 # Utility rule file for dodo_canbus_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dodo_canbus_uninstall.dir/compiler_depend.make
 include CMakeFiles/dodo_canbus_uninstall.dir/progress.make
 
 CMakeFiles/dodo_canbus_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dodo_canbus_uninstall: CMakeFiles/dodo_canbus_uninstall
 dodo_canbus_uninstall: CMakeFiles/dodo_canbus_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dodo_canbus_uninstall.dir/clean:
 .PHONY : CMakeFiles/dodo_canbus_uninstall.dir/clean
 
 CMakeFiles/dodo_canbus_uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_canbus /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_canbus/CMakeFiles/dodo_canbus_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus /home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus/CMakeFiles/dodo_canbus_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_canbus_uninstall.dir/depend
 

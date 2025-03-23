@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_imu/ament_cmake_core/dodo_imuConfig-version.cmake
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_imu/ament_cmake_core/dodo_imuConfig-version.cmake

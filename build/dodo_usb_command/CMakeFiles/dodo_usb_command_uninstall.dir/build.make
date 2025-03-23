@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command
 
 # Utility rule file for dodo_usb_command_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dodo_usb_command_uninstall.dir/compiler_depend.make
 include CMakeFiles/dodo_usb_command_uninstall.dir/progress.make
 
 CMakeFiles/dodo_usb_command_uninstall:
-	/usr/bin/cmake -P /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dodo_usb_command_uninstall: CMakeFiles/dodo_usb_command_uninstall
 dodo_usb_command_uninstall: CMakeFiles/dodo_usb_command_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dodo_usb_command_uninstall.dir/clean:
 .PHONY : CMakeFiles/dodo_usb_command_uninstall.dir/clean
 
 CMakeFiles/dodo_usb_command_uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/CMakeFiles/dodo_usb_command_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/CMakeFiles/dodo_usb_command_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_usb_command_uninstall.dir/depend
 

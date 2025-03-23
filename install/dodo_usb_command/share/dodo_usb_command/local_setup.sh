@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/ament_cmake_environment_hooks/local_setup.sh
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/ament_cmake_environment_hooks/local_setup.sh

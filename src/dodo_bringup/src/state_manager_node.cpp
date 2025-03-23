@@ -6,6 +6,17 @@ namespace dodo_bringup
 StateManagerNode::StateManagerNode() 
 : Node("state_manager_node") 
 {
+  // Declare parameters
+  this->declare_parameter("use_sim_time", false);
+  this->declare_parameter("dummy_mode", false);
+  
+  // Get parameters
+  bool use_sim_time = this->get_parameter("use_sim_time").as_bool();
+  bool dummy_mode = this->get_parameter("dummy_mode").as_bool();
+  
+  RCLCPP_INFO(this->get_logger(), "Parameter values: use_sim_time=%s, dummy_mode=%s",
+              use_sim_time ? "true" : "false", dummy_mode ? "true" : "false");
+  
   // Create publishers
   robot_state_pub_ = this->create_publisher<std_msgs::msg::String>("/robot_state", 10);
   

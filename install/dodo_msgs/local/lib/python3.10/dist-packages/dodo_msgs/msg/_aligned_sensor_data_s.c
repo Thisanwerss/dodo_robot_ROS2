@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data_s.c
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data_s.c

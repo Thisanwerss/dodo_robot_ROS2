@@ -1,0 +1,64 @@
+[0.025s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety
+[0.304s] -- The C compiler identification is GNU 11.4.0
+[0.569s] -- The CXX compiler identification is GNU 11.4.0
+[0.594s] -- Detecting C compiler ABI info
+[1.079s] -- Detecting C compiler ABI info - done
+[1.102s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.103s] -- Detecting C compile features
+[1.104s] -- Detecting C compile features - done
+[1.113s] -- Detecting CXX compiler ABI info
+[1.520s] -- Detecting CXX compiler ABI info - done
+[1.548s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.549s] -- Detecting CXX compile features
+[1.549s] -- Detecting CXX compile features - done
+[1.556s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.368s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.593s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.659s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.782s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.798s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.813s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.892s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.114s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.124s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.386s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.445s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.569s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.604s] -- Looking for pthread.h
+[3.921s] -- Looking for pthread.h - found
+[3.921s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.325s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.325s] -- Found Threads: TRUE  
+[4.469s] -- Found dodo_msgs: 0.1.0 (/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake)
+[4.994s] -- Configuring done
+[5.049s] -- Generating done
+[5.080s] -- Build files have been written to: /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
+[5.105s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_safety
+[5.125s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety -- -j2 -l2
+[5.357s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[40.427s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[42.021s] [100%] Built target safety_node
+[42.069s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety -- -j2 -l2
+[42.071s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
+[42.100s] -- Install configuration: ""
+[42.105s] -- Execute custom install script
+[42.109s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/lib/dodo_safety/safety_node
+[42.158s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/launch/safety_node.launch.py
+[42.195s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/include//dodo_safety/safety_node.hpp
+[42.256s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/ament_index/resource_index/package_run_dependencies/dodo_safety
+[42.279s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/ament_index/resource_index/parent_prefix_path/dodo_safety
+[42.339s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/environment/ament_prefix_path.sh
+[42.366s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/environment/ament_prefix_path.dsv
+[42.409s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/environment/path.sh
+[42.429s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/environment/path.dsv
+[42.459s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/local_setup.bash
+[42.496s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/local_setup.sh
+[42.535s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/local_setup.zsh
+[42.577s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/local_setup.dsv
+[42.639s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.dsv
+[42.668s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/ament_index/resource_index/packages/dodo_safety
+[42.698s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/cmake/dodo_safetyConfig.cmake
+[42.738s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/cmake/dodo_safetyConfig-version.cmake
+[42.771s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_safety/share/dodo_safety/package.xml
+[42.794s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety' returned '0': AMENT_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 # Utility rule file for dodo_msgs__cpp.
 
@@ -179,8 +179,8 @@ rosidl_generator_cpp/dodo_msgs/msg/aligned_sensor_data.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/dodo_msgs/msg/aligned_sensor_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/dodo_msgs/msg/aligned_sensor_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/dodo_msgs/msg/aligned_sensor_data.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/dodo_msgs/msg/detail/aligned_sensor_data__builder.hpp: rosidl_generator_cpp/dodo_msgs/msg/aligned_sensor_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dodo_msgs/msg/detail/aligned_sensor_data__builder.hpp
@@ -212,6 +212,6 @@ CMakeFiles/dodo_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/dodo_msgs__cpp.dir/clean
 
 CMakeFiles/dodo_msgs__cpp.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles/dodo_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles/dodo_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_msgs__cpp.dir/depend
 

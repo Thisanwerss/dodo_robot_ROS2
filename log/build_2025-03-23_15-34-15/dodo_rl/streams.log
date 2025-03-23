@@ -1,0 +1,26 @@
+[0.225s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
+[0.455s] [100%] Built target rl_node
+[0.495s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
+[0.505s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl
+[0.529s] -- Install configuration: ""
+[0.533s] -- Execute custom install script
+[0.543s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/lib/dodo_rl/rl_node
+[0.550s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/launch/rl_node.launch.py
+[0.550s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/include//dodo_rl/ppo_model.hpp
+[0.551s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/include//dodo_rl/rl_node.hpp
+[0.551s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/ament_index/resource_index/package_run_dependencies/dodo_rl
+[0.555s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/ament_index/resource_index/parent_prefix_path/dodo_rl
+[0.555s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/environment/ament_prefix_path.sh
+[0.558s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/environment/ament_prefix_path.dsv
+[0.559s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/environment/path.sh
+[0.561s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/environment/path.dsv
+[0.563s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/local_setup.bash
+[0.564s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/local_setup.sh
+[0.565s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/local_setup.zsh
+[0.568s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/local_setup.dsv
+[0.570s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.dsv
+[0.599s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/ament_index/resource_index/packages/dodo_rl
+[0.602s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/cmake/dodo_rlConfig.cmake
+[0.603s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/cmake/dodo_rlConfig-version.cmake
+[0.607s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_rl/share/dodo_rl/package.xml
+[0.617s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl

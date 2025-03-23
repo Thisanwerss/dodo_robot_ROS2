@@ -1,0 +1,4 @@
+[01m[K/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp:[m[K In member function ‘[01m[Kbool dodo_canbus::OdriveCANInterface::readMotorState(int, dodo_canbus::MotorState&)[m[K’:
+[01m[K/home/ub/dodo/dodo_robot_ROS2/src/dodo_canbus/src/odrive_can.cpp:109:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmotor_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  109 | bool OdriveCANInterface::readMotorState([01;35m[Kint motor_id[m[K, MotorState & state)
+      |                                         [01;35m[K~~~~^~~~~~~~[m[K

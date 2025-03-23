@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/ament_cmake_core/dodo_usb_commandConfig.cmake
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/ament_cmake_core/dodo_usb_commandConfig.cmake

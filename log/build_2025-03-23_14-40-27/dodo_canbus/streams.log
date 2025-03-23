@@ -1,0 +1,27 @@
+[0.062s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[0.326s] [35m[1mConsolidate compiler generated dependencies of target canbus_node[0m
+[0.462s] [100%] Built target canbus_node
+[0.513s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus -- -j2 -l2
+[0.549s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus
+[0.606s] -- Install configuration: ""
+[0.609s] -- Execute custom install script
+[0.613s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/lib/dodo_canbus/canbus_node
+[0.616s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/launch/canbus_node.launch.py
+[0.617s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/include//dodo_canbus/canbus_node.hpp
+[0.617s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/include//dodo_canbus/odrive_can.hpp
+[0.618s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/package_run_dependencies/dodo_canbus
+[0.618s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/parent_prefix_path/dodo_canbus
+[0.619s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.sh
+[0.622s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/ament_prefix_path.dsv
+[0.622s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/path.sh
+[0.622s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/environment/path.dsv
+[0.626s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.bash
+[0.627s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.sh
+[0.627s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.zsh
+[0.629s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/local_setup.dsv
+[0.629s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.dsv
+[0.692s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/ament_index/resource_index/packages/dodo_canbus
+[0.695s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig.cmake
+[0.695s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/cmake/dodo_canbusConfig-version.cmake
+[0.695s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_canbus/share/dodo_canbus/package.xml
+[0.704s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_canbus

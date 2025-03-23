@@ -1,0 +1,131 @@
+[0.034s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs -- -j2 -l2
+[0.367s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_generator_c[0m
+[0.504s] [ 12%] Built target dodo_msgs__cpp
+[0.504s] [  9%] Built target dodo_msgs__rosidl_generator_c
+[0.579s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_cpp[0m
+[0.662s] [ 12%] Built target ament_cmake_python_symlink_dodo_msgs
+[0.682s] [ 22%] Built target dodo_msgs__rosidl_typesupport_cpp
+[0.745s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_introspection_c[0m
+[0.745s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.818s] [ 32%] Built target dodo_msgs__rosidl_typesupport_fastrtps_c
+[0.858s] [ 41%] Built target dodo_msgs__rosidl_typesupport_introspection_c
+[0.862s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_c[0m
+[0.934s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.944s] [ 51%] Built target dodo_msgs__rosidl_typesupport_c
+[1.057s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.069s] [ 61%] Built target dodo_msgs__rosidl_typesupport_fastrtps_cpp
+[1.138s] [ 70%] Built target dodo_msgs__rosidl_typesupport_introspection_cpp
+[1.238s] [ 70%] Built target dodo_msgs
+[1.340s] [ 74%] Built target dodo_msgs__py
+[1.408s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_generator_py[0m
+[1.541s] [ 80%] Built target dodo_msgs__rosidl_generator_py
+[1.641s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.733s] [ 87%] Built target dodo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.790s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.887s] [ 93%] Built target dodo_msgs__rosidl_typesupport_introspection_c__pyext
+[1.975s] [35m[1mConsolidate compiler generated dependencies of target dodo_msgs__rosidl_typesupport_c__pyext[0m
+[2.072s] [100%] Built target dodo_msgs__rosidl_typesupport_c__pyext
+[2.503s] running egg_info
+[2.510s] writing dodo_msgs.egg-info/PKG-INFO
+[2.518s] writing dependency_links to dodo_msgs.egg-info/dependency_links.txt
+[2.523s] writing top-level names to dodo_msgs.egg-info/top_level.txt
+[2.531s] reading manifest file 'dodo_msgs.egg-info/SOURCES.txt'
+[2.534s] writing manifest file 'dodo_msgs.egg-info/SOURCES.txt'
+[2.652s] [100%] Built target ament_cmake_python_build_dodo_msgs_egg
+[2.748s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs -- -j2 -l2
+[2.751s] Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
+[2.796s] -- Install configuration: ""
+[2.796s] -- Execute custom install script
+[2.796s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/ament_index/resource_index/rosidl_interfaces/dodo_msgs
+[2.797s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/aligned_sensor_data.h
+[2.798s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__functions.h
+[2.799s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__struct.h
+[2.799s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__type_support.h
+[2.799s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.800s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/library_path.sh
+[2.800s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/library_path.dsv
+[2.804s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_fastrtps_c.h
+[2.804s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.805s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h
+[2.805s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.805s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/aligned_sensor_data.hpp
+[2.805s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__builder.hpp
+[2.809s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__struct.hpp
+[2.809s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__traits.hpp
+[2.817s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__type_support.hpp
+[2.818s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.822s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_fastrtps_cpp.hpp
+[2.822s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.823s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/include/dodo_msgs/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_cpp.hpp
+[2.823s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/pythonpath.sh
+[2.824s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/pythonpath.dsv
+[2.824s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[2.824s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[2.824s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[2.824s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[2.825s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/__init__.py
+[2.825s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_c.c
+[2.825s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.825s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.828s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.828s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.828s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.831s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/libdodo_msgs__rosidl_generator_py.so
+[2.832s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/__init__.py
+[2.832s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/_aligned_sensor_data.py
+[2.843s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg/_aligned_sensor_data_s.c
+[2.843s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.843s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.843s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/dodo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/msg/AlignedSensorData.idl
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/msg/AlignedSensorData.msg
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/ament_index/resource_index/package_run_dependencies/dodo_msgs
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/ament_index/resource_index/parent_prefix_path/dodo_msgs
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/ament_prefix_path.sh
+[2.844s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/ament_prefix_path.dsv
+[2.845s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/path.sh
+[2.845s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/environment/path.dsv
+[2.852s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/local_setup.bash
+[2.852s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/local_setup.sh
+[2.853s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/local_setup.zsh
+[2.853s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/local_setup.dsv
+[2.853s] -- Symlinking: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.dsv
+[2.886s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/ament_index/resource_index/packages/dodo_msgs
+[2.886s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake-extras.cmake
+[2.889s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.889s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.889s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.889s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.889s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.894s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.894s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgsConfig.cmake
+[2.895s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgsConfig-version.cmake
+[2.910s] -- Up-to-date symlink: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/package.xml
+[2.911s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
+[2.911s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
+[2.911s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
+[2.911s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
+[2.912s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.912s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
+[2.912s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
+[3.044s] Listing '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs'...
+[3.045s] Listing '/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/local/lib/python3.10/dist-packages/dodo_msgs/msg'...
+[3.074s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
+[3.085s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cExport.cmake
+[3.086s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.091s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.092s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.092s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.092s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.096s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cExport.cmake
+[3.097s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.097s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_cppExport.cmake
+[3.098s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.103s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.103s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.104s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.106s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cppExport.cmake
+[3.114s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/dodo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.115s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_pyExport.cmake
+[3.121s] -- Up-to-date: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/share/dodo_msgs/cmake/export_dodo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.127s] Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs

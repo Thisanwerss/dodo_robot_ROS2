@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/ament_cmake_core/dodo_safetyConfig-version.cmake
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/ament_cmake_core/dodo_safetyConfig-version.cmake

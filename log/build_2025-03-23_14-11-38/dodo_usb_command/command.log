@@ -1,0 +1,6 @@
+Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command
+Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ub/dodo/dodo_robot_ROS2/install/dodo_usb_command
+Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command -- -j2 -l2
+Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command -- -j2 -l2
+Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command
+Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_FASTRTPS_C_BUILDING_DLL_dodo_msgs -DROS_PACKAGE_NAME=\"dodo_msgs\"
 
-CXX_INCLUDES = -I/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_fastrtps_c -I/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs
+CXX_INCLUDES = -I/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_fastrtps_c -I/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -std=gnu++14
 

@@ -2,6 +2,8 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
+from launch_ros.parameter_descriptions import ParameterValue
+import json
 
 def generate_launch_description():
     # Launch arguments
@@ -53,9 +55,20 @@ def generate_launch_description():
             'can_interface': LaunchConfiguration('can_interface'),
             'update_rate': LaunchConfiguration('update_rate'),
             'motor_ids': [1, 2, 3, 4, 5, 6, 7, 8],
-            'pid_gains': LaunchConfiguration('pid_gains'),
+            'pid_gains': ParameterValue(LaunchConfiguration('pid_gains'), value_type=str),
             'use_sim_time': LaunchConfiguration('use_sim_time'),
             'dummy_mode': LaunchConfiguration('dummy_mode')
+        }],
+        output='screen'
+    )
+    
+    # Add debug print for parameters
+    print_params = Node(
+        package='dodo_bringup',  # Create a simple node to print parameters
+        executable='parameter_debugging_node',
+        name='parameter_debugging_node',
+        parameters=[{
+            'debug_mode': True
         }],
         output='screen'
     )
@@ -66,5 +79,6 @@ def generate_launch_description():
         pid_gains_arg,
         use_sim_time_arg,
         dummy_mode_arg,
-        canbus_node
+        canbus_node,
+        print_params
     ])

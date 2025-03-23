@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_usb_command/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command /home/ub/dodo/dodo_robot_ROS2/build/dodo_usb_command/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

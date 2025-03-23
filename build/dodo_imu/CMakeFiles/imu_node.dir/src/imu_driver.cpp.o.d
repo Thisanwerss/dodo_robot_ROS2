@@ -1,7 +1,7 @@
 CMakeFiles/imu_node.dir/src/imu_driver.cpp.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_imu/src/imu_driver.cpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_imu/src/imu_driver.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_imu/include/dodo_imu/imu_driver.hpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_imu/include/dodo_imu/imu_driver.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

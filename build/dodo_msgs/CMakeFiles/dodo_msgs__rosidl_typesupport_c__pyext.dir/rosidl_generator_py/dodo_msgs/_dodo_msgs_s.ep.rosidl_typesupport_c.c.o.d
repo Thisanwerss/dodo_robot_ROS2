@@ -1,5 +1,5 @@
 CMakeFiles/dodo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_c.c.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_c.c \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_c.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -201,9 +201,9 @@ CMakeFiles/dodo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dodo_m
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
@@ -212,4 +212,4 @@ CMakeFiles/dodo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dodo_m
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h

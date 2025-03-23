@@ -2,6 +2,8 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
+from launch_ros.parameter_descriptions import ParameterValue
+import json
 
 def generate_launch_description():
     # Launch arguments
@@ -33,7 +35,7 @@ def generate_launch_description():
         name='processing_node',
         parameters=[{
             'command_rate': LaunchConfiguration('command_rate'),
-            'motion_constraints': LaunchConfiguration('motion_constraints')
+            'motion_constraints': ParameterValue(LaunchConfiguration('motion_constraints'), value_type=str)
         }],
         output='screen'
     )

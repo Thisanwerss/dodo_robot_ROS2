@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor
-# Build directory: /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_monitor
+# Source directory: /home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor
+# Build directory: /home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

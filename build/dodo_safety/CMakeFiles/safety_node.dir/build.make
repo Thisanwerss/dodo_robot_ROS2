@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety
 
 # Include any dependencies generated for this target.
 include CMakeFiles/safety_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/safety_node.dir/progress.make
 include CMakeFiles/safety_node.dir/flags.make
 
 CMakeFiles/safety_node.dir/src/safety_node.cpp.o: CMakeFiles/safety_node.dir/flags.make
-CMakeFiles/safety_node.dir/src/safety_node.cpp.o: /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety/src/safety_node.cpp
+CMakeFiles/safety_node.dir/src/safety_node.cpp.o: /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety/src/safety_node.cpp
 CMakeFiles/safety_node.dir/src/safety_node.cpp.o: CMakeFiles/safety_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safety_node.dir/src/safety_node.cpp.o -MF CMakeFiles/safety_node.dir/src/safety_node.cpp.o.d -o CMakeFiles/safety_node.dir/src/safety_node.cpp.o -c /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety/src/safety_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/safety_node.dir/src/safety_node.cpp.o -MF CMakeFiles/safety_node.dir/src/safety_node.cpp.o.d -o CMakeFiles/safety_node.dir/src/safety_node.cpp.o -c /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety/src/safety_node.cpp
 
 CMakeFiles/safety_node.dir/src/safety_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/safety_node.dir/src/safety_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety/src/safety_node.cpp > CMakeFiles/safety_node.dir/src/safety_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety/src/safety_node.cpp > CMakeFiles/safety_node.dir/src/safety_node.cpp.i
 
 CMakeFiles/safety_node.dir/src/safety_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/safety_node.dir/src/safety_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety/src/safety_node.cpp -o CMakeFiles/safety_node.dir/src/safety_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety/src/safety_node.cpp -o CMakeFiles/safety_node.dir/src/safety_node.cpp.s
 
 # Object files for target safety_node
 safety_node_OBJECTS = \
@@ -93,12 +93,12 @@ safety_node_EXTERNAL_OBJECTS =
 safety_node: CMakeFiles/safety_node.dir/src/safety_node.cpp.o
 safety_node: CMakeFiles/safety_node.dir/build.make
 safety_node: /opt/ros/humble/lib/librclcpp.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_c.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_c.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_fastrtps_cpp.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_introspection_cpp.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_cpp.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_py.so
 safety_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 safety_node: /opt/ros/humble/lib/librcl.so
 safety_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -159,8 +159,8 @@ safety_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 safety_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 safety_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 safety_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
-safety_node: /home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_typesupport_c.so
+safety_node: /home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs/lib/libdodo_msgs__rosidl_generator_c.so
 safety_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 safety_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 safety_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
@@ -179,7 +179,7 @@ safety_node: /opt/ros/humble/lib/librcpputils.so
 safety_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 safety_node: /opt/ros/humble/lib/librcutils.so
 safety_node: CMakeFiles/safety_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable safety_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable safety_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/safety_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +191,6 @@ CMakeFiles/safety_node.dir/clean:
 .PHONY : CMakeFiles/safety_node.dir/clean
 
 CMakeFiles/safety_node.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_safety/CMakeFiles/safety_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety /home/ub/dodo/dodo_robot_ROS2/src/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety /home/ub/dodo/dodo_robot_ROS2/build/dodo_safety/CMakeFiles/safety_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/safety_node.dir/depend
 

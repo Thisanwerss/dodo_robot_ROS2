@@ -1,9 +1,9 @@
 {
   "package_name": "dodo_msgs",
-  "output_dir": "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_fastrtps_c/dodo_msgs",
+  "output_dir": "/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_fastrtps_c/dodo_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_adapter/dodo_msgs:msg/AlignedSensorData.idl"
+    "/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_adapter/dodo_msgs:msg/AlignedSensorData.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -106,7 +106,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_adapter/dodo_msgs/msg/AlignedSensorData.idl",
+    "/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_adapter/dodo_msgs/msg/AlignedSensorData.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

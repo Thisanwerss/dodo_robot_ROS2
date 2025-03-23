@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_sensor_fusion/ament_cmake_environment_hooks/local_setup.zsh
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_sensor_fusion/ament_cmake_environment_hooks/local_setup.zsh

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 # Utility rule file for ament_cmake_python_symlink_dodo_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_dodo_msgs:
-	/usr/bin/cmake -E create_symlink /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/ament_cmake_python/dodo_msgs/dodo_msgs
+	/usr/bin/cmake -E create_symlink /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/ament_cmake_python/dodo_msgs/dodo_msgs
 
 ament_cmake_python_symlink_dodo_msgs: CMakeFiles/ament_cmake_python_symlink_dodo_msgs
 ament_cmake_python_symlink_dodo_msgs: CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_dodo_msgs.dir/depend
 

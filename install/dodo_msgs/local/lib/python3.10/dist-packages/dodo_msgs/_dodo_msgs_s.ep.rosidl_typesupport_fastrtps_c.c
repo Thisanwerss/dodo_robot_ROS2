@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs/_dodo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c

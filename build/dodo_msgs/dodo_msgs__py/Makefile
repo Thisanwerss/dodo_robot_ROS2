@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py//CMakeFiles/progress.marks
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles 0
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py//CMakeFiles/progress.marks
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/clean
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/preinstall
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/preinstall
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/rule:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/rule
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/rule
 .PHONY : dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ dodo_msgs__py: dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/rule
 
 # fast build rule for target.
 dodo_msgs__py/fast:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build.make dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(MAKE) $(MAKESILENT) -f dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build.make dodo_msgs__py/CMakeFiles/dodo_msgs__py.dir/build
 .PHONY : dodo_msgs__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

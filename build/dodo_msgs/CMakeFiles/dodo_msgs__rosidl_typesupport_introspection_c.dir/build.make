@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/depend.make
@@ -168,8 +168,8 @@ rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__ros
 rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_introspection_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c: rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c
@@ -177,16 +177,16 @@ rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__typ
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o: CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o: rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o: CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o -MF CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o.d -o CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o -c /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o -MF CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o.d -o CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.o -c /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c
 
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c > CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c > CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.i
 
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c -o CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c -o CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c.s
 
 # Object files for target dodo_msgs__rosidl_typesupport_introspection_c
 dodo_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
@@ -210,7 +210,7 @@ libdodo_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libbuil
 libdodo_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libdodo_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libdodo_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libdodo_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libdodo_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -223,6 +223,6 @@ CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_introspection_c.h
 CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/dodo_msgs/msg/detail/aligned_sensor_data__type_support.c
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_msgs__rosidl_typesupport_introspection_c.dir/depend
 

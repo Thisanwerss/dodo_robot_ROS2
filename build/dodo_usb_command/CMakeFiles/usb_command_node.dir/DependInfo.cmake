@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command/src/usb_command_node.cpp" "CMakeFiles/usb_command_node.dir/src/usb_command_node.cpp.o" "gcc" "CMakeFiles/usb_command_node.dir/src/usb_command_node.cpp.o.d"
+  "/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command/src/usb_command_node.cpp" "CMakeFiles/usb_command_node.dir/src/usb_command_node.cpp.o" "gcc" "CMakeFiles/usb_command_node.dir/src/usb_command_node.cpp.o.d"
   )
 
 # Targets to which this target links.

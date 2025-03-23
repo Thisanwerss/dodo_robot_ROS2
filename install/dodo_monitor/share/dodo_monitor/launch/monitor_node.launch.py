@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_monitor/launch/monitor_node.launch.py
+/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/launch/monitor_node.launch.py

@@ -1,7 +1,7 @@
 CMakeFiles/usb_command_node.dir/src/usb_command_node.cpp.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command/src/usb_command_node.cpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command/src/usb_command_node.cpp \
  /usr/include/stdc-predef.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command/include/dodo_usb_command/usb_command_node.hpp \
+ /home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command/include/dodo_usb_command/usb_command_node.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

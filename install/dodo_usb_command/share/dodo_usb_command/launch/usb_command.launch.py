@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_usb_command/launch/usb_command.launch.py
+/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command/launch/usb_command.launch.py

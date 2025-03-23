@@ -1,1 +1,1 @@
-/home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake
+/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

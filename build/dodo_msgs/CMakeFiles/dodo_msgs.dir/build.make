@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs
+CMAKE_SOURCE_DIR = /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs
+CMAKE_BINARY_DIR = /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs
 
 # Utility rule file for dodo_msgs.
 
@@ -66,7 +66,7 @@ include CMakeFiles/dodo_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/dodo_msgs.dir/progress.make
 
-CMakeFiles/dodo_msgs: /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs/msg/AlignedSensorData.msg
+CMakeFiles/dodo_msgs: /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs/msg/AlignedSensorData.msg
 CMakeFiles/dodo_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/dodo_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/dodo_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -139,6 +139,6 @@ CMakeFiles/dodo_msgs.dir/clean:
 .PHONY : CMakeFiles/dodo_msgs.dir/clean
 
 CMakeFiles/dodo_msgs.dir/depend:
-	cd /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/src/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/CMakeFiles/dodo_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/CMakeFiles/dodo_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dodo_msgs.dir/depend
 

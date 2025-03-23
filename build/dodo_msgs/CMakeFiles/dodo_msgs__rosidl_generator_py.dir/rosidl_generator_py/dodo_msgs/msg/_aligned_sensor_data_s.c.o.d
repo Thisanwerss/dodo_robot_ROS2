@@ -1,5 +1,5 @@
 CMakeFiles/dodo_msgs__rosidl_generator_py.dir/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data_s.c.o: \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data_s.c \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -207,7 +207,7 @@ CMakeFiles/dodo_msgs__rosidl_generator_py.dir/rosidl_generator_py/dodo_msgs/msg/
  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__struct.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
@@ -216,5 +216,5 @@ CMakeFiles/dodo_msgs__rosidl_generator_py.dir/rosidl_generator_py/dodo_msgs/msg/
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h \
- /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/detail/aligned_sensor_data__functions.h \
+ /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_c/dodo_msgs/msg/rosidl_generator_c__visibility_control.h

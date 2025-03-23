@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/dodo_main/dodo_robot_ws/build/dodo_msgs/dodo_msgs__py
+# Install script for directory: /home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/dodo_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/dodo_main/dodo_robot_ws/install/dodo_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ub/dodo/dodo_robot_ROS2/install/dodo_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
