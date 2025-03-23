@@ -1,0 +1,118 @@
+@startuml "Dodo Robot System Architecture"
+
+!theme plain
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam padding 2
+skinparam componentStyle rectangle
+skinparam linetype ortho
+
+' Colors
+!$lightBlue = "#ADD8E6"
+!$lightGreen = "#90EE90" 
+!$lightOrange = "#FFCC99"
+!$lightPink = "#FFB6C1"
+!$lightPurple = "#D8BFD8"
+!$lightYellow = "#FFFFCC"
+!$lightGray = "#DDDDDD"
+
+' Node definitions
+rectangle "IMU Node" as imu #$lightBlue {
+  note right: Interfaces with IMU sensor\nPublishes raw IMU data
+}
+
+rectangle "CAN Bus Node" as canbus #$lightGreen {
+  note right: Controls motors via CAN\nHandles motor commands & feedback
+}
+
+rectangle "USB Command Node" as usb_command #$lightOrange {
+  note right: Processes joystick input\nPublishes control commands
+}
+
+rectangle "RL Node" as rl #$lightPurple {
+  note right: Runs trained PPO model\nGenerates joint position targets
+}
+
+rectangle "Processing Node" as processing #$lightYellow {
+  note right: Validates and processes commands\nApplies motion constraints
+}
+
+rectangle "Sensor Fusion Node" as fusion #$lightPink {
+  note right: Synchronizes sensor data\nCombines IMU & joint states
+}
+
+rectangle "Monitor Node" as monitor #$lightGray {
+  note right: Monitors system health\nProvides diagnostics
+}
+
+rectangle "Safety Node" as safety #$lightGray {
+  note right: Detects unsafe conditions\nTrigggers emergency stop
+}
+
+rectangle "State Manager Node" as state_manager #$lightGray {
+  note right: Manages robot states\nControls state transitions
+}
+
+' Topic definitions with message types
+circle "/imu_data\nsensor_msgs/Imu" as imu_data
+circle "/motor_states\nsensor_msgs/JointState" as motor_states
+circle "/usb_commands\nstd_msgs/Int32" as usb_commands
+circle "/rl_actions\nsensor_msgs/JointState" as rl_actions
+circle "/processed_commands\nsensor_msgs/JointState" as processed_commands
+circle "/aligned_sensor_data\ndodo_msgs/AlignedSensorData" as aligned_sensor_data
+circle "/emergency_stop\nstd_msgs/Bool" as emergency_stop
+circle "/robot_state\nstd_msgs/String" as robot_state
+circle "/sensor_diagnostics\ndiagnostic_msgs/DiagnosticArray" as sensor_diagnostics
+
+' Connections between nodes and topics
+imu --> imu_data : publishes
+canbus --> motor_states : publishes
+canbus <-- processed_commands : subscribes
+usb_command --> usb_commands : publishes
+rl --> rl_actions : publishes
+processing <-- rl_actions : subscribes
+processing <-- usb_commands : subscribes
+processing --> processed_commands : publishes
+fusion <-- imu_data : subscribes
+fusion <-- motor_states : subscribes
+fusion --> aligned_sensor_data : publishes
+safety <-- aligned_sensor_data : subscribes
+safety --> emergency_stop : publishes
+monitor <-- aligned_sensor_data : subscribes
+monitor --> sensor_diagnostics : publishes
+state_manager <-- emergency_stop : subscribes
+state_manager <-- usb_commands : subscribes
+state_manager <-- aligned_sensor_data : subscribes
+state_manager --> robot_state : publishes
+rl <-- robot_state : subscribes
+rl <-- aligned_sensor_data : subscribes
+usb_command <-- robot_state : subscribes
+canbus <-- emergency_stop : subscribes
+processing <-- aligned_sensor_data : subscribes
+
+' Node groupings (optional)
+package "Hardware Interface" {
+  imu
+  canbus
+}
+
+package "Control" {
+  rl
+  usb_command
+  processing
+}
+
+package "Data Processing" {
+  fusion
+}
+
+package "System Management" {
+  monitor
+  safety
+  state_manager
+}
+
+' Caption
+caption "Dodo Robot System - ROS2 Node and Topic Architecture"
+
+@enduml
