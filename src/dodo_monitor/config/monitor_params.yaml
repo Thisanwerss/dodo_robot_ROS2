@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+    imu_noise_threshold: 0.05  # m/s²
+    joint_position_noise_threshold: 0.01  # rad
+    check_rate: 10  # Hz
+    system_info_rate: 1  # Hz

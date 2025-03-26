@@ -1,0 +1,103 @@
+# ROS2 Build and Installation files
+build/
+install/
+log/
+
+# Colcon build files
+.colcon_cd_root
+.colcon_install_layout
+
+# Make files
+Makefile
+*.make
+*.mk
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.a
+*.la
+*.lo
+
+# Build folders
+**/cmake-build-debug/
+**/CMakeFiles/
+**/CMakeCache.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*\$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE files
+.idea/
+.project
+.cproject
+.settings/
+.vscode/
+.vs/
+*.swp
+*.swo
+.*.sw?
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ROS specific
+.catkin_workspace
+/bag_files/
+.rosinstall
+.catkin_tools/
+.catkin/
+
+# Temporary and log files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tif
+*.tiff
+# Uncomment if you don't want to track icons/logos
+# !icons/
+# !logo/
+
+# Documentation build
+_build/
+_static/
+_templates/
+

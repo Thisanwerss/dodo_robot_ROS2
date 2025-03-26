@@ -16,10 +16,10 @@ find_package(rclcpp REQUIRED)
 find_package(diagnostic_msgs REQUIRED)
 find_package(dodo_msgs REQUIRED)
 
-# Include directories
+# Include our own directories
 include_directories(include)
 
-# Add executable
+# Standard executable (monitor_node)
 add_executable(monitor_node src/monitor_node.cpp)
 ament_target_dependencies(monitor_node rclcpp diagnostic_msgs dodo_msgs)
 
@@ -32,6 +32,12 @@ install(TARGETS
 # Install launch files
 install(DIRECTORY
   launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# Install config files
+install(DIRECTORY
+  config
   DESTINATION share/${PROJECT_NAME}
 )
 
