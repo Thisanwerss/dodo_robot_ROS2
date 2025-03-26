@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/ament_cmake_python/dodo_msgs/dodo_msgs.egg-info/top_level.txt

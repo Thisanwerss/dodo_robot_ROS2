@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_introspection_c/dodo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

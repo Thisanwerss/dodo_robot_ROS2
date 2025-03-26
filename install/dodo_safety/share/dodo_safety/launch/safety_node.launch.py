@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/src/dodo_safety/launch/safety_node.launch.py

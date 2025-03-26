@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_monitor/ament_cmake_environment_hooks/local_setup.bash

@@ -1,8 +1,0 @@
-source;share/dodo_rl/hook/cmake_prefix_path.ps1
-source;share/dodo_rl/hook/cmake_prefix_path.dsv
-source;share/dodo_rl/hook/cmake_prefix_path.sh
-source;share/dodo_rl/local_setup.bash
-source;share/dodo_rl/local_setup.dsv
-source;share/dodo_rl/local_setup.ps1
-source;share/dodo_rl/local_setup.sh
-source;share/dodo_rl/local_setup.zsh

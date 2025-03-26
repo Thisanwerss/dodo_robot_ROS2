@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_typesupport_fastrtps_cpp/dodo_msgs/msg/detail/aligned_sensor_data__rosidl_typesupport_fastrtps_cpp.hpp

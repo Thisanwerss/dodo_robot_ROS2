@@ -1,4 +1,0 @@
-source;share/dodo_usb_command/local_setup.bash
-source;share/dodo_usb_command/local_setup.dsv
-source;share/dodo_usb_command/local_setup.sh
-source;share/dodo_usb_command/local_setup.zsh

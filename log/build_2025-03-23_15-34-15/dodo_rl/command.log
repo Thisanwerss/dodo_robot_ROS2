@@ -1,4 +1,0 @@
-Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
-Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl -- -j2 -l2
-Invoking command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl
-Invoked command in '/home/ub/dodo/dodo_robot_ROS2/build/dodo_rl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ub/dodo/dodo_robot_ROS2/build/dodo_rl

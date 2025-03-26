@@ -34,7 +34,7 @@ private:
   
   // Timer for publishing state
   rclcpp::TimerBase::SharedPtr timer_;
-  
+  rclcpp::TimerBase::SharedPtr init_timer_;
   // Callback for timer
   void publishState();
   

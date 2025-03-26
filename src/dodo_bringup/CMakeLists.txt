@@ -59,7 +59,7 @@ install(DIRECTORY
 )
 
 # Install configuration files
-install(DIRECTORY
+Install(DIRECTORY
   config
   DESTINATION share/${PROJECT_NAME}
 )

@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/ament_cmake_core/dodo_msgsConfig.cmake

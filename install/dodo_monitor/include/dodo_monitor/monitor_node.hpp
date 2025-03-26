@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/include/dodo_monitor/monitor_node.hpp
