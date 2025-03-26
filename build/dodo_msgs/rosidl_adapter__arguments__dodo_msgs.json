@@ -1,6 +1,0 @@
-{
-  "package_name": "dodo_msgs",
-  "non_idl_tuples": [
-    "/home/ub/dodo/dodo_robot_ROS2/src/dodo_msgs:msg/AlignedSensorData.msg"
-  ]
-}

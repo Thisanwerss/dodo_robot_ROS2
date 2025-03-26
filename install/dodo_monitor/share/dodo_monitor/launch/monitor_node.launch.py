@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/src/dodo_monitor/launch/monitor_node.launch.py

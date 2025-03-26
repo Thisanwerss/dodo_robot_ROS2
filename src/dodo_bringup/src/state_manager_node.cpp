@@ -7,7 +7,7 @@ StateManagerNode::StateManagerNode()
 : Node("state_manager_node") 
 {
   // Declare parameters
-  this->declare_parameter("use_sim_time", false);
+  //this->declare_parameter("use_sim_time", false);
   this->declare_parameter("dummy_mode", false);
   
   // Get parameters
@@ -150,7 +150,7 @@ void StateManagerNode::initializeRobot()
   // In a real system, this would wait for confirmation that subsystems are ready
   
   // For demonstration purposes, automatically transition to STANDBY after a delay
-  auto timer = this->create_wall_timer(
+  init_timer_= this->create_wall_timer(
     std::chrono::seconds(2),
     [this]() {
       RCLCPP_INFO(this->get_logger(), "Robot initialization complete");

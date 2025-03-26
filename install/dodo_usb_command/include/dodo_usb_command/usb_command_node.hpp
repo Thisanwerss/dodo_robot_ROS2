@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/src/dodo_usb_command/include/dodo_usb_command/usb_command_node.hpp

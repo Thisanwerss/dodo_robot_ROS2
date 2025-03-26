@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/src/dodo_bringup/include/dodo_bringup/robot_state_machine.hpp

@@ -1,1 +1,0 @@
-/home/ub/dodo/dodo_robot_ROS2/build/dodo_msgs/rosidl_generator_py/dodo_msgs/msg/_aligned_sensor_data.py
