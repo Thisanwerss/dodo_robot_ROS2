@@ -32,6 +32,8 @@ public:
 
 public slots:
   void updateGUI();
+  void updateInfo();
+  void updateSensor();
   void handleNodeSelectionChanged();
   void handleTopicSelectionChanged();
   void refreshData();
@@ -68,6 +70,7 @@ private:
   QTableWidget* joints_table_;
   
   QTimer* update_timer_;
+  QTimer* update_sensor_timer_;
   
   // Selected items
   QString selected_node_;

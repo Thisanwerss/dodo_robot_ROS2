@@ -16,9 +16,14 @@ MonitorGUI::MonitorGUI(std::shared_ptr<MonitorNode> monitor_node, QWidget* paren
   setupUI();
   
   // Set up timer for periodic updates
+  update_sensor_timer_ = new QTimer(this);
+  connect(update_sensor_timer_, &QTimer::timeout, this, &MonitorGUI::updateSensor);
+  update_sensor_timer_->start(500);  // Update every 500ms
+
   update_timer_ = new QTimer(this);
-  connect(update_timer_, &QTimer::timeout, this, &MonitorGUI::updateGUI);
-  update_timer_->start(500);  // Update every 500ms
+  connect(update_timer_, &QTimer::timeout, this, &MonitorGUI::updateInfo);
+  update_timer_->start(200000);  // Update every 500ms
+
   
   // Initialize with a first update
   updateGUI();
@@ -142,6 +147,18 @@ void MonitorGUI::updateGUI()
   updateSensorDataView();
 }
 
+void MonitorGUI::updateSensor()
+{
+  updateDiagnosticsView();
+  updateSensorDataView();
+}
+
+void MonitorGUI::updateInfo()
+{
+  updateNodesView();
+  updateTopicsView();
+}
+
 void MonitorGUI::refreshData()
 {
   updateGUI();
@@ -197,6 +214,7 @@ void MonitorGUI::updateNodesView()
 
 void MonitorGUI::handleNodeSelectionChanged()
 {
+  
   QList<QTreeWidgetItem*> selected_items = nodes_tree_->selectedItems();
   if (selected_items.isEmpty()) {
     selected_node_ = "";
@@ -210,7 +228,7 @@ void MonitorGUI::handleNodeSelectionChanged()
     
     // Get node info
     auto nodes_info = monitor_node_->getNodesInfo();
-    std::string full_name = selected_item->text(1).toStdString() + "/" + selected_item->text(0).toStdString();
+    std::string full_name = selected_item->text(1).toStdString() + selected_item->text(0).toStdString();
     
     if (nodes_info.find(full_name) != nodes_info.end()) {
       const auto& node_info = nodes_info[full_name];
