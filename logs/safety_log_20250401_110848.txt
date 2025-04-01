@@ -1,0 +1,2 @@
+[2025-04-01 11:08:48] INFO: Safety node initialized
+[2025-04-01 11:13:51] INFO: Safety node shutting down

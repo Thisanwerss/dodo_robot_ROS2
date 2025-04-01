@@ -55,7 +55,7 @@ wheels/
 .project
 .cproject
 .settings/
-.vscode/
+
 .vs/
 *.swp
 *.swo

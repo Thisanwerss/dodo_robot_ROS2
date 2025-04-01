@@ -24,6 +24,33 @@ void GUINode::startGUI(int argc, char** argv)
   QApplication app(argc, argv);
   gui_ = std::make_shared<MonitorGUI>(monitor_node_);
   gui_->show();
+  QTimer::singleShot(2000, [this]() {
+    RCLCPP_INFO(this->get_logger(), "Delayed node population triggered");
+
+    monitor_node_->addKnownNode("monitor_node", "/");
+    monitor_node_->addKnownNode("gui_node", "/");
+    monitor_node_->addKnownNode("imu_node", "/");
+    monitor_node_->addKnownNode("canbus_node", "/");
+    monitor_node_->addKnownNode("usb_command_node", "/");
+    monitor_node_->addKnownNode("processing_node", "/");
+    monitor_node_->addKnownNode("fusion_node", "/");
+    monitor_node_->addKnownNode("safety_node", "/");
+    monitor_node_->addKnownNode("state_manager_node", "/");
+
+    monitor_node_->addKnownTopic("/aligned_sensor_data", "dodo_msgs/msg/AlignedSensorData");
+    monitor_node_->addKnownTopic("/imu_raw", "sensor_msgs/msg/Imu");
+    monitor_node_->addKnownTopic("/rl_actions", "sensor_msgs/msg/JointState");
+    monitor_node_->addKnownTopic("/motor_states", "sensor_msgs/msg/JointState");
+    monitor_node_->addKnownTopic("/sensor_diagnostics", "diagnostic_msgs/msg/DiagnosticArray");
+    monitor_node_->addKnownTopic("/robot_state", "std_msgs/msg/String");
+    monitor_node_->addKnownTopic("/usb_commands", "std_msgs/msg/Int32");
+
+    gui_->refreshData(); 
+  });
+
+
+
+
   app.exec();
 }
 
@@ -38,25 +65,7 @@ int main(int argc, char * argv[])
   // Create monitor node (will run in a separate thread)
   auto monitor_node = std::make_shared<dodo_monitor::MonitorNode>();
   
-  // Add some known nodes for demo purposes
-  monitor_node->addKnownNode("monitor_node", "/");
-  monitor_node->addKnownNode("gui_node", "/");
-  monitor_node->addKnownNode("imu_node", "/");
-  monitor_node->addKnownNode("canbus_node", "/");
-  monitor_node->addKnownNode("usb_command_node", "/");
-  monitor_node->addKnownNode("processing_node", "/");
-  monitor_node->addKnownNode("fusion_node", "/");
-  monitor_node->addKnownNode("safety_node", "/");
-  monitor_node->addKnownNode("state_manager_node", "/");
   
-  // Add some known topics for demo purposes
-  monitor_node->addKnownTopic("/aligned_sensor_data", "dodo_msgs/msg/AlignedSensorData");
-  monitor_node->addKnownTopic("/imu_data", "sensor_msgs/msg/Imu");
-  monitor_node->addKnownTopic("/joint_states", "sensor_msgs/msg/JointState");
-  monitor_node->addKnownTopic("/motor_commands", "std_msgs/msg/Float32MultiArray");
-  monitor_node->addKnownTopic("/sensor_diagnostics", "diagnostic_msgs/msg/DiagnosticArray");
-  monitor_node->addKnownTopic("/robot_state", "std_msgs/msg/String");
-  monitor_node->addKnownTopic("/safety_status", "std_msgs/msg/Bool");
   
   // Create GUI node
   auto gui_node = std::make_shared<dodo_monitor::GUINode>(monitor_node);

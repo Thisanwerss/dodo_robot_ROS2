@@ -22,7 +22,7 @@ MonitorGUI::MonitorGUI(std::shared_ptr<MonitorNode> monitor_node, QWidget* paren
 
   update_timer_ = new QTimer(this);
   connect(update_timer_, &QTimer::timeout, this, &MonitorGUI::updateInfo);
-  update_timer_->start(200000);  // Update every 500ms
+  update_timer_->start(20000);  // Update every 20000ms
 
   
   // Initialize with a first update
@@ -227,11 +227,11 @@ void MonitorGUI::handleNodeSelectionChanged()
     selected_node_ = selected_item->text(0) + " " + selected_item->text(1);  // Node name + namespace
     
     // Get node info
-    auto nodes_info = monitor_node_->getNodesInfo();
+    const auto& nodes_info = monitor_node_->getNodesInfo();
     std::string full_name = selected_item->text(1).toStdString() + selected_item->text(0).toStdString();
     
     if (nodes_info.find(full_name) != nodes_info.end()) {
-      const auto& node_info = nodes_info[full_name];
+      const auto& node_info = nodes_info.at(full_name);;
       
       // Update details table
       node_details_table_->setRowCount(0);
@@ -256,17 +256,32 @@ void MonitorGUI::handleNodeSelectionChanged()
       for (const auto& topic : node_info.published_topics) {
         published_topics += QString::fromStdString(topic) + "\n";
       }
-      node_details_table_->setItem(row, 1, new QTableWidgetItem(published_topics));
+      auto* item = new QTableWidgetItem(published_topics);
+      item->setTextAlignment(Qt::AlignTop | Qt::AlignLeft);
+      item->setToolTip(published_topics);
+      node_details_table_->setItem(row, 1, item);
+      node_details_table_->setWordWrap(true);
+      node_details_table_->resizeRowsToContents();
+      node_details_table_->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
       
       // Add subscribed topics
       row = node_details_table_->rowCount();
       node_details_table_->insertRow(row);
       node_details_table_->setItem(row, 0, new QTableWidgetItem("Subscribed Topics"));
+
       QString subscribed_topics = "";
       for (const auto& topic : node_info.subscribed_topics) {
-        subscribed_topics += QString::fromStdString(topic) + "\n";
-      }
-      node_details_table_->setItem(row, 1, new QTableWidgetItem(subscribed_topics));
+      subscribed_topics += QString::fromStdString(topic) + "\n";
+    }
+     auto* sub_item = new QTableWidgetItem(subscribed_topics);
+     sub_item->setTextAlignment(Qt::AlignTop | Qt::AlignLeft);
+     sub_item->setToolTip(subscribed_topics);
+     node_details_table_->setItem(row, 1, sub_item);
+     node_details_table_->setWordWrap(true);
+     node_details_table_->resizeRowsToContents();
+     node_details_table_->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+
+        
       
       // Add services
       row = node_details_table_->rowCount();
@@ -276,7 +291,13 @@ void MonitorGUI::handleNodeSelectionChanged()
       for (const auto& service : node_info.services) {
         services += QString::fromStdString(service) + "\n";
       }
-      node_details_table_->setItem(row, 1, new QTableWidgetItem(services));
+      auto* service_item = new QTableWidgetItem(services);
+      service_item->setTextAlignment(Qt::AlignTop | Qt::AlignLeft);  
+      service_item->setToolTip(services);  
+      node_details_table_->setItem(row, 1, service_item);
+      node_details_table_->setWordWrap(true);
+      node_details_table_->resizeRowsToContents();
+      node_details_table_->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
     }
   }
 }

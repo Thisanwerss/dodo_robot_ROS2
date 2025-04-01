@@ -87,13 +87,13 @@ namespace dodo_monitor {
     }
     
     // Getter methods
-    std::map<std::string, NodeInfo> MonitorNode::getNodesInfo()
+    const std::map<std::string, NodeInfo>& MonitorNode::getNodesInfo() const 
     {
       std::lock_guard<std::mutex> lock(info_mutex_);
       return nodes_info_;
     }
     
-    std::map<std::string, TopicInfo> MonitorNode::getTopicsInfo()
+    const std::map<std::string, TopicInfo>& MonitorNode::getTopicsInfo() const
     {
       std::lock_guard<std::mutex> lock(info_mutex_);
       return topics_info_;
@@ -114,27 +114,64 @@ namespace dodo_monitor {
     }
     
     // Add a node to the known nodes list
-    void MonitorNode::addKnownNode(const std::string& node_name, const std::string& node_namespace)
-    {
-      std::lock_guard<std::mutex> lock(info_mutex_);
-      
-      std::string full_name = node_namespace;
-      if (full_name.empty() || full_name == "/") {
-        full_name = "/" + node_name;
-      } else {
-        full_name = full_name + "/" + node_name;
-      }
-      
-      // Only add if it doesn't exist already
-      if (nodes_info_.find(full_name) == nodes_info_.end()) {
-        NodeInfo node_info;
-        node_info.node_name = node_name;
-        node_info.node_namespace = node_namespace;
-        nodes_info_[full_name] = node_info;
-        
-        RCLCPP_INFO(this->get_logger(), "Added node to tracking: %s", full_name.c_str());
+void MonitorNode::addKnownNode(const std::string& node_name, const std::string& node_namespace)
+{
+  std::lock_guard<std::mutex> lock(info_mutex_);
+  
+  std::string full_name = node_namespace;
+  if (full_name.empty() || full_name == "/") {
+    full_name = "/" + node_name;
+  } else {
+    full_name = full_name + "/" + node_name;
+  }
+  
+  // Only add if it doesn't exist already
+  if (nodes_info_.find(full_name) == nodes_info_.end()) {
+    NodeInfo node_info;
+    node_info.node_name = node_name;
+    node_info.node_namespace = node_namespace;
+  
+  auto all_topics = this->get_topic_names_and_types();
+
+  for (const auto& topic : all_topics) {
+    const std::string& topic_name = topic.first;
+  
+    // --- Check publishers ---
+    auto publishers_info = this->get_publishers_info_by_topic(topic_name);
+    for (const auto& info : publishers_info) {
+      if (info.node_name() == node_name && info.node_namespace() == node_namespace) {
+        if (std::find(node_info.published_topics.begin(), node_info.published_topics.end(), topic_name) == node_info.published_topics.end()) {
+          node_info.published_topics.push_back(topic_name);
+        }
       }
     }
+  
+    // --- Check subscribers ---
+    auto subscribers_info = this->get_subscriptions_info_by_topic(topic_name);
+    for (const auto& info : subscribers_info) {
+      if (info.node_name() == node_name && info.node_namespace() == node_namespace) {
+        if (std::find(node_info.subscribed_topics.begin(), node_info.subscribed_topics.end(), topic_name) == node_info.subscribed_topics.end()) {
+          node_info.subscribed_topics.push_back(topic_name);
+        }
+      }
+    }
+  }
+  
+  auto all_services = this->get_service_names_and_types();
+  auto node_services = this->get_service_names_and_types_by_node(node_name, node_namespace);
+  for (const auto& service : node_services) {
+    const std::string& service_name = service.first;
+    if (std::find(node_info.services.begin(), node_info.services.end(), service_name) == node_info.services.end()) {
+    node_info.services.push_back(service_name);
+  }
+}
+    
+        
+    nodes_info_[full_name] = node_info;
+    
+    RCLCPP_INFO(this->get_logger(), "Added node to tracking: %s", full_name.c_str());
+  }
+}
     
     // Add a topic to the known topics list
     void MonitorNode::addKnownTopic(const std::string& topic_name, const std::string& topic_type)
@@ -148,6 +185,17 @@ namespace dodo_monitor {
         topic_info.topic_types.push_back(topic_type);
         topic_info.msg_frequency = 0.0;
         topic_info.last_msg_time = this->now();
+        auto publishers = this->get_publishers_info_by_topic(topic_name);
+        for (const auto& pub : publishers) {
+          std::string full_name = pub.node_namespace() + pub.node_name();
+          topic_info.publisher_nodes.push_back(full_name);
+        }
+        auto subscribers = this->get_subscriptions_info_by_topic(topic_name);
+        for (const auto& sub : subscribers) {
+          std::string full_name = sub.node_namespace() + sub.node_name();
+          topic_info.subscriber_nodes.push_back(full_name);
+        }
+
         topics_info_[topic_name] = topic_info;
         
         RCLCPP_INFO(this->get_logger(), "Added topic to tracking: %s (%s)", 

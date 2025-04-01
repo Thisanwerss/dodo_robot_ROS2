@@ -38,8 +38,9 @@ public:
   virtual ~MonitorNode();
 
   // System information getters
-  std::map<std::string, NodeInfo> getNodesInfo();
-  std::map<std::string, TopicInfo> getTopicsInfo();
+  const std::map<std::string, NodeInfo>& getNodesInfo() const;
+
+  const std::map<std::string, TopicInfo>& getTopicsInfo() const;
   std::vector<diagnostic_msgs::msg::DiagnosticStatus> getLatestDiagnostics();
   dodo_msgs::msg::AlignedSensorData::SharedPtr getLatestSensorData() const;
   

@@ -91,13 +91,13 @@ void MonitorNode::alignedSensorDataCallback(const dodo_msgs::msg::AlignedSensorD
 }
 
 // Getter methods
-std::map<std::string, NodeInfo> MonitorNode::getNodesInfo()
+const std::map<std::string, NodeInfo>& MonitorNode::getNodesInfo() const 
 {
   std::lock_guard<std::mutex> lock(info_mutex_);
   return nodes_info_;
 }
 
-std::map<std::string, TopicInfo> MonitorNode::getTopicsInfo()
+const std::map<std::string, TopicInfo>& MonitorNode::getTopicsInfo() const
 {
   std::lock_guard<std::mutex> lock(info_mutex_);
   return topics_info_;
@@ -134,6 +134,21 @@ void MonitorNode::addKnownNode(const std::string& node_name, const std::string& 
     NodeInfo node_info;
     node_info.node_name = node_name;
     node_info.node_namespace = node_namespace;
+    auto all_topics = this->get_topic_names_and_types();
+    for(const auto& topic: all_topics){
+      const std::string& topic_name=topic.first;
+      auto publishers_info= this->get_publishers_info_by_topic(topic_name);
+      for(const auto& info:publishers_info){
+        if(info.node_name()==node_name && info.node_namespace()==node_namespace){
+          if(std::find(node_info.published_topics.begin(), node_info.published_topics.end(), topic_name) == node_info.published_topics.end()){
+            node_info.published_topics.push_back(topic_name);
+        }
+        }
+      }
+    }
+
+    
+        
     nodes_info_[full_name] = node_info;
     
     RCLCPP_INFO(this->get_logger(), "Added node to tracking: %s", full_name.c_str());
