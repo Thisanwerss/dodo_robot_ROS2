@@ -157,22 +157,33 @@ void MonitorNode::addKnownNode(const std::string& node_name, const std::string& 
 
 // Add a topic to the known topics list
 void MonitorNode::addKnownTopic(const std::string& topic_name, const std::string& topic_type)
-{
-  std::lock_guard<std::mutex> lock(info_mutex_);
-  
-  // Only add if it doesn't exist already
-  if (topics_info_.find(topic_name) == topics_info_.end()) {
-    TopicInfo topic_info;
-    topic_info.topic_name = topic_name;
-    topic_info.topic_types.push_back(topic_type);
-    topic_info.msg_frequency = 0.0;
-    topic_info.last_msg_time = this->now();
-    topics_info_[topic_name] = topic_info;
-    
-    RCLCPP_INFO(this->get_logger(), "Added topic to tracking: %s (%s)", 
-               topic_name.c_str(), topic_type.c_str());
-  }
-}
+    {
+      std::lock_guard<std::mutex> lock(info_mutex_);
+      
+      // Only add if it doesn't exist already
+      if (topics_info_.find(topic_name) == topics_info_.end()) {
+        TopicInfo topic_info;
+        topic_info.topic_name = topic_name;
+        topic_info.topic_types.push_back(topic_type);
+        topic_info.msg_frequency = 0.0;
+        topic_info.last_msg_time = this->now();
+        auto publishers = this->get_publishers_info_by_topic(topic_name);
+        for (const auto& pub : publishers) {
+          std::string full_name = pub.node_namespace() + pub.node_name();
+          topic_info.publisher_nodes.push_back(full_name);
+        }
+        auto subscribers = this->get_subscriptions_info_by_topic(topic_name);
+        for (const auto& sub : subscribers) {
+          std::string full_name = sub.node_namespace() + sub.node_name();
+          topic_info.subscriber_nodes.push_back(full_name);
+        }
+
+        topics_info_[topic_name] = topic_info;
+        
+        RCLCPP_INFO(this->get_logger(), "Added topic to tracking: %s (%s)", 
+                   topic_name.c_str(), topic_type.c_str());
+      }
+    }
 
 void MonitorNode::checkSensors()
 {

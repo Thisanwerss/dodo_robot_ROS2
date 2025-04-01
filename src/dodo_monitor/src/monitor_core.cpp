@@ -33,9 +33,7 @@ namespace dodo_monitor {
         std::chrono::milliseconds(1000 / check_rate_),
         std::bind(&MonitorNode::checkSensors, this));
       
-      system_info_timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(1000 / system_info_rate_),
-        std::bind(&MonitorNode::updateSystemInfo, this));
+      
     
       RCLCPP_INFO(this->get_logger(), "Monitor Node initialized with check rate %d Hz", check_rate_);
       RCLCPP_INFO(this->get_logger(), "System info update rate: %d Hz", system_info_rate_);
@@ -203,6 +201,11 @@ void MonitorNode::addKnownNode(const std::string& node_name, const std::string& 
       }
     }
     
+ 
+
+
+
+
     void MonitorNode::checkSensors()
     {
       // Check if we have enough data
@@ -239,33 +242,8 @@ void MonitorNode::addKnownNode(const std::string& node_name, const std::string& 
       diagnostics_pub_->publish(std::move(diag_array));
     }
     
-    void MonitorNode::updateSystemInfo()
-    {
-      std::lock_guard<std::mutex> lock(info_mutex_);
-      
-      // For ROS2, we need to use a different approach than get_node_names_and_namespaces()
-      // In this implementation, we'll just maintain a simple list of known nodes
-      
-      // Make sure we have the aligned_sensor_data topic
-      if (topics_info_.find("/aligned_sensor_data") == topics_info_.end()) {
-        TopicInfo topic_info;
-        topic_info.topic_name = "/aligned_sensor_data";
-        topic_info.topic_types.push_back("dodo_msgs/msg/AlignedSensorData");
-        topic_info.msg_frequency = 0.0;
-        topic_info.last_msg_time = this->now();
-        topics_info_["/aligned_sensor_data"] = topic_info;
-      }
-      
-      // Make sure we have the sensor_diagnostics topic
-      if (topics_info_.find("/sensor_diagnostics") == topics_info_.end()) {
-        TopicInfo topic_info;
-        topic_info.topic_name = "/sensor_diagnostics";
-        topic_info.topic_types.push_back("diagnostic_msgs/msg/DiagnosticArray");
-        topic_info.msg_frequency = 0.0;
-        topic_info.last_msg_time = this->now();
-        topics_info_["/sensor_diagnostics"] = topic_info;
-      }
-    }
+    
+    
     
     diagnostic_msgs::msg::DiagnosticStatus MonitorNode::monitorIMU()
     {

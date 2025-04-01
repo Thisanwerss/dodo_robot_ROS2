@@ -50,6 +50,9 @@ public:
   // Add a topic to the topic list for display
   void addKnownTopic(const std::string& topic_name, const std::string& topic_type);
 
+ 
+
+
 private:
   // Timer callbacks
   void checkSensors();
