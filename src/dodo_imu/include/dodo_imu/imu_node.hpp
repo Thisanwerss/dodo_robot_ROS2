@@ -6,16 +6,27 @@
 #include <string>
 #include <memory>
 #include <cmath>
-#include "dodo_imu/imu_driver.hpp"
+
 
 namespace dodo_imu
 {
+struct IMUData {
+  double timestamp;            // Timestamp in seconds
+  double accel_x;              // Acceleration in m/s^2
+  double accel_y;
+  double accel_z;
+  double gyro_x;               // Angular velocity in rad/s
+  double gyro_y;
+  double gyro_z;
+  std::array<double, 9> cov_accel;  // Covariance matrix for acceleration
+  std::array<double, 9> cov_gyro;   // Covariance matrix for angular velocity
+};
 
 class IMUNode : public rclcpp::Node
 {
 public:
   IMUNode();
-  virtual ~IMUNode();
+ 
 
 private:
   // Timer callback
@@ -26,6 +37,8 @@ private:
   
   // Generate dummy IMU data for testing
   void generateDummyIMUData(IMUData & data);
+  bool readIMU(IMUData& data);
+  bool initIMU();
 
   // Parameters
   std::string imu_device_;
@@ -34,8 +47,10 @@ private:
   std::string frame_id_;
   bool dummy_mode_;
   
+  int i2c_file_ = -1;
+
   // IMU driver
-  std::unique_ptr<IMUDriver> imu_driver_;
+ 
   
   // Publisher
   rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_raw_pub_;

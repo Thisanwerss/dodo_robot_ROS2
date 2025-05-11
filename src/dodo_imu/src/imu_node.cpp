@@ -1,9 +1,18 @@
 #include "dodo_imu/imu_node.hpp"
 #include <chrono>
 #include <cmath>
+#include <iostream>
+#include <cstring>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <linux/i2c-dev.h>
+#include <chrono>
+#include <cerrno> 
 
 namespace dodo_imu
 {
+
 
 IMUNode::IMUNode()
 : Node("imu_node")
@@ -24,19 +33,11 @@ IMUNode::IMUNode()
 
   // Initialize IMU driver if not in dummy mode
   if (!dummy_mode_) {
-    imu_driver_ = std::make_unique<IMUDriver>(imu_device_, imu_address_);
-    if (!imu_driver_->init()) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to initialize IMU: %s (address: 0x%02X)", 
-                  imu_device_.c_str(), imu_address_);
-    } else {
-      RCLCPP_INFO(this->get_logger(), "Initialized IMU: %s (address: 0x%02X)", 
-                 imu_device_.c_str(), imu_address_);
-      
-      // Configure IMU
-      if (!imu_driver_->configure()) {
-        RCLCPP_ERROR(this->get_logger(), "Failed to configure IMU");
-      }
-    }
+
+  if (!initIMU()) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to initialize I2C IMU.");
+        }
+  
   } else {
     RCLCPP_INFO(this->get_logger(), "Running in dummy mode - using simulated IMU data");
   }
@@ -52,16 +53,11 @@ IMUNode::IMUNode()
   RCLCPP_INFO(this->get_logger(), "IMU Node initialized with publish rate %d Hz", publish_rate_);
 }
 
-IMUNode::~IMUNode()
-{
-  if (imu_driver_) {
-    imu_driver_->close();
-  }
-  RCLCPP_INFO(this->get_logger(), "IMU Node shutting down");
-}
+
 
 void IMUNode::publishIMUData()
 {
+  IMUData data;
   if (dummy_mode_) {
     // Generate dummy IMU data
     IMUData dummy_data;
@@ -74,24 +70,57 @@ void IMUNode::publishIMUData()
     imu_raw_pub_->publish(imu_msg);
     RCLCPP_DEBUG(this->get_logger(), "Publishing dummy IMU data");
   } else {
-    if (!imu_driver_) {
-      return;
-    }
-    
-    // Read IMU data
-    IMUData imu_data;
-    if (!imu_driver_->readData(imu_data)) {
-      RCLCPP_WARN(this->get_logger(), "Failed to read IMU data");
-      return;
-    }
-    
-    // Convert to ROS message
-    auto imu_msg = convertToROSMsg(imu_data);
-    
-    // Publish IMU data
-    imu_raw_pub_->publish(imu_msg);
-  }
+     if (!readIMU(data)) {
+            RCLCPP_WARN(this->get_logger(), "Failed to read IMU data.");
+            return;
+        }
+     else{
+      auto msg = convertToROSMsg(data);
+      imu_raw_pub_->publish(msg);
+     }
+  
+   
 }
+}
+
+bool IMUNode::initIMU() {
+    i2c_file_ = open(imu_device_.c_str(), O_RDWR);
+    if (i2c_file_ < 0) {
+        RCLCPP_ERROR(this->get_logger(), "open() failed: %s", strerror(errno));
+        return false;
+    }
+
+    if (ioctl(i2c_file_, I2C_SLAVE, imu_address_) < 0) {
+        RCLCPP_ERROR(this->get_logger(), "ioctl() failed: %s", strerror(errno));
+        return false;
+    }
+
+    return true;
+}
+
+
+bool IMUNode::readIMU(IMUData& data) {
+    uint8_t buf[12];
+    if (read(i2c_file_, buf, 12) != 12) {
+        perror("read");
+        return false;
+    }
+    //he unit conversion of the sensor has already been done in Nicla Sense ME
+    data.timestamp = this->now().seconds();
+    data.accel_x = (int16_t)((buf[1] << 8) | buf[0]) ;
+    data.accel_y = (int16_t)((buf[3] << 8) | buf[2]) ;
+    data.accel_z = (int16_t)((buf[5] << 8) | buf[4]) ;
+
+    data.gyro_x = (int16_t)((buf[7] << 8) | buf[6]) ;
+    data.gyro_y = (int16_t)((buf[9] << 8) | buf[8]) ;
+    data.gyro_z = (int16_t)((buf[11] << 8) | buf[10]) ;
+
+    data.cov_accel.fill(0.01);
+    data.cov_gyro.fill(0.01);
+
+    return true;
+}
+
 
 sensor_msgs::msg::Imu IMUNode::convertToROSMsg(const IMUData & data)
 {
@@ -127,6 +156,17 @@ sensor_msgs::msg::Imu IMUNode::convertToROSMsg(const IMUData & data)
   
   return imu_msg;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 void IMUNode::generateDummyIMUData(IMUData & data)
 {

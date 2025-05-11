@@ -13,32 +13,28 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "externalConsole": false,
-      "environment": [
-        {
-          "name": "AMENT_PREFIX_PATH",
-          "value": "${workspaceFolder}/install"
-        },
-        {
-          "name": "LD_LIBRARY_PATH", // 共享库路径
-          "value": "/home/yuan/dodo_debug/dodo_robot_ROS2/install/dodo_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:${workspaceFolder}/install/dodo_monitor/lib"
-        },
-        {
-          "name": "DISPLAY",//根据实际情况设置0或1
-          "value": ":0"
-        },
-        {
-          "name": "QT_QPA_PLATFORM_PLUGIN_PATH",
-          "value": "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms"  // 实际 Qt 安装路径
-        },
-        {
-          "name": "LD_PRELOAD",
-          "value": "/lib/x86_64-linux-gnu/libpthread.so.0" //如果vscode是用snap下载的，需要强制指向正确的库
-        }
-        
-
-       
-        
-      ],
+     "environment": [
+  {
+    "name": "AMENT_PREFIX_PATH",
+    "value": "${workspaceFolder}/install"
+  },
+  {
+    "name": "LD_LIBRARY_PATH",
+    "value": "${workspaceFolder}/install/dodo_msgs/lib:${workspaceFolder}/install/dodo_monitor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+  },
+  {
+    "name": "DISPLAY",
+    "value": ":0"
+  },
+  {
+    "name": "QT_QPA_PLATFORM_PLUGIN_PATH",
+    "value": "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms"
+  },
+  {
+    "name": "LD_PRELOAD",
+    "value": "/lib/x86_64-linux-gnu/libpthread.so.0"
+  }
+],
       "MIMode": "gdb",
       "setupCommands": [
         {

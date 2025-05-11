@@ -19,7 +19,7 @@ find_package(sensor_msgs REQUIRED)
 include_directories(include)
 
 # Add executable
-add_executable(imu_node src/imu_node.cpp src/imu_driver.cpp)
+add_executable(imu_node src/imu_node.cpp )
 ament_target_dependencies(imu_node rclcpp sensor_msgs)
 
 # Install executables
