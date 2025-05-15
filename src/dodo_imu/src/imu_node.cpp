@@ -18,9 +18,9 @@ IMUNode::IMUNode()
 : Node("imu_node")
 {
   // Declare parameters
-  this->declare_parameter("imu_device", "/dev/i2c-1");
-  this->declare_parameter("imu_address", 0x68);
-  this->declare_parameter("publish_rate", 100);
+  this->declare_parameter("imu_device", "/dev/i2c-7");
+  this->declare_parameter("imu_address", 0x55);
+  this->declare_parameter("publish_rate", 200);
   this->declare_parameter("frame_id", "imu_link");
   this->declare_parameter("dummy_mode", false);
 
@@ -100,20 +100,32 @@ bool IMUNode::initIMU() {
 
 
 bool IMUNode::readIMU(IMUData& data) {
-    uint8_t buf[12];
-    if (read(i2c_file_, buf, 12) != 12) {
-        perror("read");
+    uint8_t buf[40]; // 增加缓冲区大小以确保足够读取四元数
+    if (read(i2c_file_, buf, 40) != 40) { // 修改读取长度为 40 字节
+        RCLCPP_ERROR(this->get_logger(), "Failed to read IMU data: expected 40 bytes.");
         return false;
     }
-    //he unit conversion of the sensor has already been done in Nicla Sense ME
-    data.timestamp = this->now().seconds();
-    data.accel_x = (int16_t)((buf[1] << 8) | buf[0]) ;
-    data.accel_y = (int16_t)((buf[3] << 8) | buf[2]) ;
-    data.accel_z = (int16_t)((buf[5] << 8) | buf[4]) ;
 
-    data.gyro_x = (int16_t)((buf[7] << 8) | buf[6]) ;
-    data.gyro_y = (int16_t)((buf[9] << 8) | buf[8]) ;
-    data.gyro_z = (int16_t)((buf[11] << 8) | buf[10]) ;
+    // 将缓冲区数据解释为浮点数
+    float* imu_floats = reinterpret_cast<float*>(buf);
+
+    // 读取加速度数据
+    data.accel_x = imu_floats[0];
+    data.accel_y = imu_floats[1];
+    data.accel_z = imu_floats[2];
+
+    // 读取陀螺仪数据
+    data.gyro_x = imu_floats[3];
+    data.gyro_y = imu_floats[4];
+    data.gyro_z = imu_floats[5];
+
+    // 读取四元数数据
+    data.quaternion_w = imu_floats[6];
+    data.quaternion_x = imu_floats[7];
+    data.quaternion_y = imu_floats[8];
+    data.quaternion_z = imu_floats[9];
+
+    data.timestamp = this->now().seconds();
 
     data.cov_accel.fill(0.01);
     data.cov_gyro.fill(0.01);
@@ -141,10 +153,10 @@ sensor_msgs::msg::Imu IMUNode::convertToROSMsg(const IMUData & data)
   imu_msg.angular_velocity.z = data.gyro_z;
   
   // Set orientation (identity quaternion as placeholder)
-  imu_msg.orientation.w = 1.0;
-  imu_msg.orientation.x = 0.0;
-  imu_msg.orientation.y = 0.0;
-  imu_msg.orientation.z = 0.0;
+  imu_msg.orientation.w = data.quaternion_w;
+  imu_msg.orientation.x = data.quaternion_x;
+  imu_msg.orientation.y = data.quaternion_y;
+  imu_msg.orientation.z = data.quaternion_z;
   
   // Set covariance matrices
   for (size_t i = 0; i < 9; ++i) {

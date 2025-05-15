@@ -7,13 +7,13 @@ def generate_launch_description():
     # Launch arguments
     imu_device_arg = DeclareLaunchArgument(
         'imu_device',
-        default_value='/dev/i2c-1',
+        default_value='/dev/i2c-7',
         description='Path to the IMU device'
     )
 
     imu_address_arg = DeclareLaunchArgument(
         'imu_address',
-        default_value='104',  # 0x68 in decimal
+        default_value='85',  # 0x55 in decimal
         description='I2C address of the IMU'
     )
 

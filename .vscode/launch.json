@@ -2,13 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug gui_node (Qt + ROS 2)",
+      "name": "Debug imu_node",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/install/dodo_monitor/lib/dodo_monitor/gui_node",
+      "program": "${workspaceFolder}/install/dodo_imu/lib/dodo_imu/imu_node",
       "args": [
         "--ros-args",
-        "-p", "dummy_mode:=true"
+        "-p", "dummy_mode:=false"
       ],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
@@ -20,7 +20,7 @@
   },
   {
     "name": "LD_LIBRARY_PATH",
-    "value": "${workspaceFolder}/install/dodo_msgs/lib:${workspaceFolder}/install/dodo_monitor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+    "value": "${workspaceFolder}/install/dodo_msgs/lib:${workspaceFolder}/install/dodo_monitor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib"
   },
   {
     "name": "DISPLAY",
@@ -32,7 +32,7 @@
   },
   {
     "name": "LD_PRELOAD",
-    "value": "/lib/x86_64-linux-gnu/libpthread.so.0"
+    "value": "/lib/aarch64-linux-gnu/libpthread.so.0"
   }
 ],
       "MIMode": "gdb",

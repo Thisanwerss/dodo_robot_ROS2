@@ -18,6 +18,10 @@ struct IMUData {
   double gyro_x;               // Angular velocity in rad/s
   double gyro_y;
   double gyro_z;
+  double quaternion_w;
+  double quaternion_x;
+  double quaternion_y;
+  double quaternion_z;
   std::array<double, 9> cov_accel;  // Covariance matrix for acceleration
   std::array<double, 9> cov_gyro;   // Covariance matrix for angular velocity
 };
