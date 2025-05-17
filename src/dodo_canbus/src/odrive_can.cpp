@@ -31,6 +31,7 @@ bool OdriveCANInterface::init()
   }
   
   // Specify the CAN interface
+  //通过接口名如can0获取接口索引,这个索引是在内核中唯一的
   struct ifreq ifr;
   std::strncpy(ifr.ifr_name, can_interface_.c_str(), IFNAMSIZ - 1);
   ifr.ifr_name[IFNAMSIZ - 1] = '\0';
@@ -58,6 +59,7 @@ bool OdriveCANInterface::init()
   return true;
 }
 
+
 void OdriveCANInterface::close()
 {
   if (socket_fd_ >= 0) {
@@ -67,60 +69,95 @@ void OdriveCANInterface::close()
   is_open_ = false;
 }
 
-bool OdriveCANInterface::sendPositionCommand(int motor_id, double position)
+bool OdriveCANInterface::sendPositionCommand(int can_id, double position)
 {
-  // In a real implementation, this would encode the position command
-  // according to the Odrive CAN protocol and send it on the CAN bus
-  
-  // For this simplified implementation, just log the command
-  std::cout << "Sending position command to motor " << motor_id 
-            << ": " << position << " rad" << std::endl;
-  
-  // Placeholder - always return success
+ if (socket_fd_ < 0) {
+        std::cerr << "Socket not initialized!" << std::endl;
+        return false;
+    }
+
+    struct can_frame frame;
+    frame.can_id = can_id;        // already includes the base + command (e.g. motor_id | 0x00C)
+    frame.can_dlc = 8;            // ODrive position command is 8 bytes
+
+    // Convert double (position in rad) to float
+    float pos_f = static_cast<float>(position);
+
+    // Encode position (float) into first 4 bytes
+    std::memcpy(&frame.data[0], &pos_f, 4);
+
+    // Velocity and torque feedforward (set to 0)
+    int16_t vel_ff = 0;
+    int16_t torque_ff = 0;
+    std::memcpy(&frame.data[4], &vel_ff, 2);
+    std::memcpy(&frame.data[6], &torque_ff, 2);
+
+    // Send the frame via socketCAN
+    ssize_t nbytes = write(socket_fd_, &frame, sizeof(frame));
+    if (nbytes != sizeof(frame)) {
+        std::cerr << "Failed to send CAN frame." << std::endl;
+        return false;
+    }
+
   return true;
 }
 
-bool OdriveCANInterface::sendVelocityCommand(int motor_id, double velocity)
-{
-  // In a real implementation, this would encode the velocity command
-  // according to the Odrive CAN protocol and send it on the CAN bus
-  
-  // For this simplified implementation, just log the command
-  std::cout << "Sending velocity command to motor " << motor_id 
-            << ": " << velocity << " rad/s" << std::endl;
-  
-  // Placeholder - always return success
-  return true;
+can_frame OdriveCANInterface::buildODriveRequestFrame(int motor_id, uint16_t base_cmd_id) {
+    can_frame frame{};
+    frame.can_id = (motor_id << 5)| base_cmd_id ;
+    frame.can_dlc = 0;  
+    return frame;
 }
 
-bool OdriveCANInterface::setPIDGains(int motor_id, const PIDGains & gains)
-{
-  // In a real implementation, this would encode the PID gains
-  // according to the Odrive CAN protocol and send it on the CAN bus
-  
-  // For this simplified implementation, just log the gains
-  std::cout << "Setting PID gains for motor " << motor_id 
-            << ": kp=" << gains.kp << ", ki=" << gains.ki << ", kd=" << gains.kd << std::endl;
-  
-  // Placeholder - always return success
-  return true;
+bool OdriveCANInterface::readODriveResponse(int socket_fd, int motor_id, uint16_t base_cmd_id, double& pos_out, double& vel_out) {
+    can_frame recv_frame{};
+
+    // 等待接收 CAN 响应帧（阻塞方式）
+    ssize_t nbytes = read(socket_fd, &recv_frame, sizeof(recv_frame));
+    if (nbytes < 0) {
+        perror("Read failed");
+        return false;
+    }
+
+    // 计算预期的 CAN ID（必须和请求一致）
+    uint16_t expected_id = (motor_id << 5)| base_cmd_id;
+
+    // 校验 ID 和数据长度
+    if (recv_frame.can_id != expected_id || recv_frame.can_dlc != 8) {
+        std::cerr << "Unexpected CAN ID or data length\n";
+        return false;
+    }
+
+    std::memcpy(&pos_out, &recv_frame.data[0], 4);
+    std::memcpy(&vel_out, &recv_frame.data[4], 4);
+
+    return true;
 }
+
+
 
 bool OdriveCANInterface::readMotorState(int motor_id, MotorState & state)
-{
-  // In a real implementation, this would send a request for the motor state
-  // and wait for a response, then decode the response
-  
-  // For this simplified implementation, just create dummy values
-  state.position = 0.0;  // rad
-  state.velocity = 0.0;  // rad/s
-  state.torque = 0.0;    // Nm
-  state.calibrated = true;
-  state.error = false;
-  state.error_code = 0;
-  
-  // Placeholder - always return success
-  return true;
+{ can_frame req_frame = buildODriveRequestFrame(motor_id, 0x009); //request for position and velocity
+  ssize_t nbytes = write(socket_fd_, &req_frame, sizeof(req_frame));
+  if (nbytes != sizeof(req_frame)) {
+    std::cerr << "Failed to send CAN request frame." << std::endl;
+    return false;
+  }
+  // Read response frame
+  if (readODriveResponse(socket_fd_, motor_id, 0x009, state.position, state.velocity)) {
+    std::cout << "Axis - Position: " << state.position << " turns, Velocity: " << state.velocity<< " turns/sec\n";
+    double iq_setpoint;
+    if (readODriveResponse(socket_fd_, motor_id, 0x014, iq_setpoint, state.torque)) {
+        std::cout << "Axis - Iq Setpoint: " << iq_setpoint << " A, Torque: " << state.torque << " Nm\n";
+        return true;
+    } else {
+        return false;
+    }
+
+} else {
+    return false;
+}
+
 }
 
 bool OdriveCANInterface::readMotorStates(const std::vector<int> & motor_ids, std::map<int, MotorState> & motor_states)

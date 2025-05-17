@@ -4,12 +4,12 @@
 #include <string>
 #include <vector>
 #include <map>
-
+#include <linux/can.h>
 namespace dodo_canbus
 {
 
 // Motor state structure
-struct MotorState {
+  struct MotorState {
   double position;        // Current position in radians
   double velocity;        // Current velocity in radians/second
   double torque;          // Current torque in Nm
@@ -38,19 +38,16 @@ public:
   void close();
   
   // Send a position command to a motor
-  bool sendPositionCommand(int motor_id, double position);
+  bool sendPositionCommand(int can_id, double position);
 
-  // Send a velocity command to a motor
-  bool sendVelocityCommand(int motor_id, double velocity);
+  can_frame buildODriveRequestFrame(int motor_id, uint16_t base_cmd_id);
   
-  // Send PID gains to a motor
-  bool setPIDGains(int motor_id, const PIDGains & gains);
-  
+  bool readODriveResponse(int socket_fd, int motor_id, uint16_t base_cmd_id, double& pos_out, double& vel_out);
   // Read motor state from CAN
   bool readMotorState(int motor_id, MotorState & state);
   
   // Read multiple motor states
-  bool readMotorStates(const std::vector<int> & motor_ids, std::map<int, MotorState> & motor_states);
+  bool readMotorStates(const std::vector<int> & can_ids, std::map<int, MotorState> & motor_states);
   
   // Emergency stop all motors
   bool emergencyStop();

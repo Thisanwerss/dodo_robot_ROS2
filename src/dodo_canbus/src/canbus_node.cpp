@@ -11,7 +11,7 @@ CANBusNode::CANBusNode()
   this->declare_parameter("can_interface", "can0");
   this->declare_parameter("update_rate", 100);
   this->declare_parameter("motor_ids", std::vector<int64_t>{1, 2, 3, 4, 5, 6, 7, 8});
-  this->declare_parameter("pid_gains", "{}");
+  this->declare_parameter("pid_gains", "{}"); 
   this->declare_parameter("dummy_mode", false);
 
   // Get parameters
@@ -19,7 +19,7 @@ CANBusNode::CANBusNode()
   update_rate_ = this->get_parameter("update_rate").as_int();
   dummy_mode_ = this->get_parameter("dummy_mode").as_bool();
   
-  // Get motor IDs and convert from int64_t to int
+  // Get motor IDs and convert from int64_t to int 
   auto motor_ids_int64 = this->get_parameter("motor_ids").as_integer_array();
   motor_ids_.clear();
   for (const auto & id : motor_ids_int64) {
@@ -28,7 +28,7 @@ CANBusNode::CANBusNode()
   
   pid_gains_json_ = this->get_parameter("pid_gains").as_string();
 
-  // Create joint to motor ID mapping (assuming joint names are in order with motor IDs)
+  // Create joint to motor ID mapping (assuming joint names are in order with motor IDs) 
   std::vector<std::string> joint_names = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7", "joint8"};
   joint_to_motor_id_.clear();
   for (size_t i = 0; i < joint_names.size() && i < motor_ids_.size(); ++i) {
@@ -52,13 +52,11 @@ CANBusNode::CANBusNode()
     "/processed_commands", 10, std::bind(&CANBusNode::processedCommandsCallback, this, std::placeholders::_1));
     
   emergency_stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
-    "/emergency_stop", 10, std::bind(&CANBusNode::emergencyStopCallback, this, std::placeholders::_1));
+    "/emergency_stop", 10, std::bind(&CANBusNode::emergencyStopCallback, this, std::placeholders::_1)); 
 
   // Create publisher
   motor_states_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/motor_states", 10);
 
-  // Apply PID gains
-  applyPIDGains();
 
   // Create timer for updating CAN
   timer_ = this->create_wall_timer(
@@ -80,6 +78,7 @@ void CANBusNode::processedCommandsCallback(const sensor_msgs::msg::JointState::S
 {
   std::lock_guard<std::mutex> lock(commands_mutex_);
   latest_processed_commands_ = msg;
+  //这里不马上添加读取电机状态的函数，而是等到updateCAN函数中调用（防止CAN阻塞）
 }
 
 void CANBusNode::emergencyStopCallback(const std_msgs::msg::Bool::SharedPtr msg)
@@ -107,11 +106,9 @@ void CANBusNode::updateCAN()
       return;  // Don't send commands if emergency stop is active
     }
   }
-
-  // Send commands to motors
-  sendCommands();
   
-  // Read motor states
+  // Read motor states and write commands to motors
+  sendCommands();
   readMotorStates();
 }
 
@@ -149,7 +146,8 @@ void CANBusNode::sendCommands()
       
       // Send command to motor
       if (can_interface_ptr_) {
-        bool result = can_interface_ptr_->sendPositionCommand(motor_id, position);
+        int can_id = motor_id | 0x00C; // Simple CAN Protocol 0x00c for set the position
+        bool result = can_interface_ptr_->sendPositionCommand(can_id, position);
         if (!result) {
           RCLCPP_WARN(this->get_logger(), "Failed to send position command to motor %d", motor_id);
         }
@@ -205,46 +203,6 @@ void CANBusNode::readMotorStates()
   motor_states_pub_->publish(std::move(joint_state_msg));
 }
 
-void CANBusNode::applyPIDGains()
-{
-  if (!can_interface_ptr_) {
-    RCLCPP_ERROR(this->get_logger(), "CAN interface not initialized");
-    return;
-  }
-  
-  try {
-    // Parse PID gains JSON
-    auto pid_gains = nlohmann::json::parse(pid_gains_json_);
-    
-    // Apply PID gains to each motor
-    for (const auto& motor_id : motor_ids_) {
-      // Convert motor ID to string for JSON lookup
-      std::string motor_id_str = std::to_string(motor_id);
-      
-      // Check if we have PID gains for this motor
-      if (pid_gains.contains(motor_id_str)) {
-        auto& motor_pid = pid_gains[motor_id_str];
-        
-        // Create PID gains structure
-        PIDGains gains;
-        gains.kp = motor_pid["kp"];
-        gains.ki = motor_pid["ki"];
-        gains.kd = motor_pid["kd"];
-        
-        // Set PID gains
-        bool result = can_interface_ptr_->setPIDGains(motor_id, gains);
-        if (!result) {
-          RCLCPP_WARN(this->get_logger(), "Failed to set PID gains for motor %d", motor_id);
-        } else {
-          RCLCPP_INFO(this->get_logger(), "Set PID gains for motor %d: kp=%.3f, ki=%.3f, kd=%.3f", 
-                     motor_id, gains.kp, gains.ki, gains.kd);
-        }
-      }
-    }
-  } catch (const nlohmann::json::exception& e) {
-    RCLCPP_ERROR(this->get_logger(), "Error parsing PID gains JSON: %s", e.what());
-  }
-}
 
 void CANBusNode::generateDummyMotorStates(sensor_msgs::msg::JointState & msg)
 {
