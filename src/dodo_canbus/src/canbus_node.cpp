@@ -1,5 +1,6 @@
 #include "dodo_canbus/canbus_node.hpp"
 #include <nlohmann/json.hpp>
+#include "dodo_canbus/odrive_can.hpp"
 
 namespace dodo_canbus
 {
@@ -108,9 +109,27 @@ void CANBusNode::updateCAN()
   }
   
   // Read motor states and write commands to motors
-  sendCommands();
-  readMotorStates();
+  //sendCommands();
+  //readMotorStates();
+
+  //below is the code for testing the CAN interface
+  int can_id = 0x07 | 0x00C; // Simple CAN Protocol 0x00c for set the position
+        bool result = can_interface_ptr_->sendPositionCommand(can_id, 1.0);
+        if (!result) {
+          RCLCPP_WARN(this->get_logger(), "Failed to send position command to motor %d", can_id);
+
 }
+  MotorState state;
+  bool result=can_interface_ptr_->readMotorState(0x07, state);
+
+
+
+
+
+
+
+}
+
 
 void CANBusNode::sendCommands()
 {
@@ -149,7 +168,7 @@ void CANBusNode::sendCommands()
         int can_id = motor_id | 0x00C; // Simple CAN Protocol 0x00c for set the position
         bool result = can_interface_ptr_->sendPositionCommand(can_id, position);
         if (!result) {
-          RCLCPP_WARN(this->get_logger(), "Failed to send position command to motor %d", motor_id);
+          RCLCPP_WARN(this->get_logger(), "Failed to send position command to motor %d", can_id);
         }
       }
     }
