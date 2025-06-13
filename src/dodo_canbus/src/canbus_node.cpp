@@ -114,13 +114,13 @@ void CANBusNode::updateCAN()
 
   //below is the code for testing the CAN interface
   int can_id = 0x07 | 0x00C; // Simple CAN Protocol 0x00c for set the position
-        bool result = can_interface_ptr_->sendPositionCommand(can_id, 1.0);
-        if (!result) {
+        bool result1 = can_interface_ptr_->sendPositionCommand(can_id, 1.0);
+        if (!result1) {
           RCLCPP_WARN(this->get_logger(), "Failed to send position command to motor %d", can_id);
 
 }
   MotorState state;
-  bool result=can_interface_ptr_->readMotorState(0x07, state);
+      result1=can_interface_ptr_->readMotorState(0x07, state);
 
 
 

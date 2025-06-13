@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <linux/joystick.h>
+#include <unistd.h>
 
 namespace dodo_usb_command
 {

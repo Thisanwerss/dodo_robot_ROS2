@@ -34,6 +34,7 @@ USBCommandNode::USBCommandNode()
   RCLCPP_INFO(this->get_logger(), "USB Command Node initialized with publish rate %d Hz", publish_rate_);
 }
 
+
 USBCommandNode::~USBCommandNode()
 {
   if (usb_device_.is_open()) {
@@ -58,7 +59,7 @@ void USBCommandNode::readUSBDevice()
   if (!readRawData(raw_data)) {
     return;
   }
-
+  
   // Process raw data to get command
   Command cmd = processJoystickInput(raw_data);
 
@@ -70,23 +71,68 @@ void USBCommandNode::readUSBDevice()
 
 bool USBCommandNode::readRawData(std::vector<int> & raw_data)
 {
-  // This is a simplified placeholder. In a real implementation,
-  // you would read actual joystick events from the device.
-  
-  // For demonstration purposes, we'll just return a simple array
-  raw_data = {0, 0, 0, 0};
+   int fd = open("/dev/input/js0", O_RDONLY | O_NONBLOCK);
+  if (fd < 0) {
+    perror("open js0 failed");
+    return false;
+  }
 
-  // Pretend we read some data
+  struct js_event e;
+  raw_data.clear();
+  int max_events = 1;
+  int count = 0;
+
+  while (count < max_events) {
+    ssize_t bytes = read(fd, &e, sizeof(e));
+    if (bytes == sizeof(e)) {
+      if (e.type & JS_EVENT_INIT) {
+        continue;
+      }
+
+      raw_data.push_back(e.type);
+      raw_data.push_back(e.number);
+      raw_data.push_back(e.value);
+      count++;
+    } else {
+      usleep(1000);
+    }
+  }
+
+  close(fd);
   return true;
+
+
 }
 
 Command USBCommandNode::processJoystickInput(const std::vector<int> & raw_data)
 {
-  // This is a simplified placeholder. In a real implementation,
-  // you would interpret the joystick events to determine the command.
-  
-  // For demonstration purposes, we'll just return STOP
-  return Command::STOP;
+  for (size_t i = 0; i + 2 < raw_data.size(); i += 3) {
+    int raw_type = raw_data[i];
+    int number = raw_data[i + 1];
+    int value = raw_data[i + 2];
+
+    int type = raw_type & ~JS_EVENT_INIT;  
+
+    if (type == JS_EVENT_BUTTON) {
+      if (number == 0 && value == 1) {
+        return Command::STOP;  
+      }
+    }
+
+    if (type == JS_EVENT_AXIS) {
+      if (number == 6) { 
+        if (value < -10000) return Command::LEFT;
+        if (value >  10000) return Command::RIGHT;
+      }
+      if (number == 7) { 
+        if (value < -10000) return Command::FORWARD;
+        if (value >  10000) return Command::BACKWARD;
+      }
+    }
+  }
+
+  return Command::STOP; 
+
 }
 
 }  // namespace dodo_usb_command
