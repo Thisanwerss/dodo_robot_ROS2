@@ -16,14 +16,12 @@ ProcessingNode::ProcessingNode()
   motion_constraints_json_ = this->get_parameter("motion_constraints").as_string();
 
   // Create subscribers
-  rl_actions_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
-    "/rl_actions", 10, std::bind(&ProcessingNode::rlActionsCallback, this, std::placeholders::_1));
+  
     
   usb_commands_sub_ = this->create_subscription<std_msgs::msg::Int32>(
     "/usb_commands", 10, std::bind(&ProcessingNode::usbCommandsCallback, this, std::placeholders::_1));
     
-  aligned_sensor_data_sub_ = this->create_subscription<dodo_msgs::msg::AlignedSensorData>(
-    "/aligned_sensor_data", 10, std::bind(&ProcessingNode::alignedSensorDataCallback, this, std::placeholders::_1));
+ 
 
   // Create publisher
   processed_commands_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("/processed_commands", 10);
@@ -41,118 +39,96 @@ ProcessingNode::~ProcessingNode()
   RCLCPP_INFO(this->get_logger(), "Processing Node shutting down");
 }
 
-void ProcessingNode::rlActionsCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
+
+void ProcessingNode::loadTrajectoryFromFile(const std::string& filepath)
 {
-  std::lock_guard<std::mutex> lock(rl_actions_mutex_);
-  latest_rl_actions_ = msg;
+  std::lock_guard<std::mutex> lock(trajectory_mutex_);
+  trajectory_.clear();
+  current_trajectory_index_ = 0;
+
+  try {
+    auto traj_json = nlohmann::json::parse(filepath);
+
+    if (!traj_json.is_array()) {
+      RCLCPP_ERROR(this->get_logger(), "Trajectory JSON is not an array.");
+      return;
+    }
+
+    for (const auto& point : traj_json) {
+      sensor_msgs::msg::JointState js;
+      js.header.stamp = this->now();
+
+     
+      if (point.contains("name") && point["name"].is_array()) {
+        js.name = point["name"].get<std::vector<std::string>>();
+      }
+
+     
+      if (point.contains("position") && point["position"].is_array()) {
+        js.position = point["position"].get<std::vector<double>>();
+      }
+
+
+      trajectory_.push_back(js);
+    }
+
+    trajectory_playback_active_ = true;
+    RCLCPP_INFO(this->get_logger(), "Trajectory loaded with %zu points.", trajectory_.size());
+
+  } catch (const nlohmann::json::exception& e) {
+    RCLCPP_ERROR(this->get_logger(), "JSON parsing error: %s", e.what());
+  }
+  
 }
+
+
+
+
 
 void ProcessingNode::usbCommandsCallback(const std_msgs::msg::Int32::SharedPtr msg)
 {
   std::lock_guard<std::mutex> lock(usb_command_mutex_);
   latest_usb_command_ = msg;
+   switch (msg->data) {
+    case 1:
+      loadTrajectoryFromFile("trajectory/forward.json");
+      break;
+    case 2:
+      loadTrajectoryFromFile("trajectory/backward.json");
+      break;
+    case 3:
+      loadTrajectoryFromFile("trajectory/left.json");
+      break;
+    case 4:
+      loadTrajectoryFromFile("trajectory/right.json");
+      break;
+    default:
+      break;
+  }
 }
 
-void ProcessingNode::alignedSensorDataCallback(const dodo_msgs::msg::AlignedSensorData::SharedPtr msg)
-{
-  std::lock_guard<std::mutex> lock(sensor_data_mutex_);
-  latest_sensor_data_ = msg;
-}
+
 
 void ProcessingNode::processCommands()
 {
-  // Combine RL actions and USB commands
-  auto combined_command = combineCommands();
+   {
+    std::lock_guard<std::mutex> lock(trajectory_mutex_);
+    if (trajectory_playback_active_ && current_trajectory_index_ < trajectory_.size()) {
+      auto cmd = trajectory_[current_trajectory_index_++];
+      cmd.header.stamp = this->now();
+      processed_commands_pub_->publish(cmd);
+      return;
+    } else if (trajectory_playback_active_) {
+      trajectory_playback_active_ = false;
+      RCLCPP_INFO(this->get_logger(), "Trajectory playback completed.");
+    }
+  }
   
-  // Apply motion constraints
-  applyMotionConstraints(combined_command);
-  
-  // Publish processed command
-  processed_commands_pub_->publish(combined_command);
 }
 
-sensor_msgs::msg::JointState ProcessingNode::combineCommands()
-{
-  // Create a new joint state message
-  sensor_msgs::msg::JointState combined_command;
-  combined_command.header.stamp = this->now();
-  
-  // Add RL actions if available
-  {
-    std::lock_guard<std::mutex> lock(rl_actions_mutex_);
-    if (latest_rl_actions_) {
-      combined_command.name = latest_rl_actions_->name;
-      combined_command.position = latest_rl_actions_->position;
-      combined_command.velocity = latest_rl_actions_->velocity;
-      combined_command.effort = latest_rl_actions_->effort;
-    }
-  }
-  
-  // Modify based on USB commands if available
-  {
-    std::lock_guard<std::mutex> lock(usb_command_mutex_);
-    if (latest_usb_command_) {
-      // Simple example: adjust positions based on command
-      // In a real implementation, this would be more sophisticated
-      if (!combined_command.position.empty()) {
-        switch (latest_usb_command_->data) {
-          case 1:  // FORWARD
-            combined_command.position[0] += 0.1;
-            break;
-          case 2:  // BACKWARD
-            combined_command.position[0] -= 0.1;
-            break;
-          case 3:  // LEFT
-            combined_command.position[1] += 0.1;
-            break;
-          case 4:  // RIGHT
-            combined_command.position[1] -= 0.1;
-            break;
-          default:
-            // No adjustment for STOP or unknown commands
-            break;
-        }
-      }
-    }
-  }
-  
-  return combined_command;
-}
 
-void ProcessingNode::applyMotionConstraints(sensor_msgs::msg::JointState & cmd)
-{
-  // Only apply constraints if we have valid positions
-  if (cmd.position.empty()) {
-    return;
-  }
-  
-  try {
-    // Parse motion constraints JSON
-    auto constraints = nlohmann::json::parse(motion_constraints_json_);
-    
-    // Apply constraints to each joint
-    for (size_t i = 0; i < cmd.name.size() && i < cmd.position.size(); ++i) {
-      const auto& joint_name = cmd.name[i];
-      
-      // Check if we have constraints for this joint
-      if (constraints.contains(joint_name)) {
-        auto& joint_constraints = constraints[joint_name];
-        
-        // Apply min/max position constraints
-        if (joint_constraints.contains("min_position") && 
-            joint_constraints.contains("max_position")) {
-          double min_pos = joint_constraints["min_position"];
-          double max_pos = joint_constraints["max_position"];
-          
-          // Clamp position to min/max
-          cmd.position[i] = std::max(min_pos, std::min(cmd.position[i], max_pos));
-        }
-      }
-    }
-  } catch (const nlohmann::json::exception& e) {
-    RCLCPP_ERROR(this->get_logger(), "Error parsing motion constraints JSON: %s", e.what());
-  }
-}
+
+
 
 }  // namespace dodo_processing
 

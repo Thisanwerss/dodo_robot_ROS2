@@ -23,13 +23,12 @@ private:
   void processCommands();
   
   // Subscribers callbacks
-  void rlActionsCallback(const sensor_msgs::msg::JointState::SharedPtr msg);
+ 
   void usbCommandsCallback(const std_msgs::msg::Int32::SharedPtr msg);
-  void alignedSensorDataCallback(const dodo_msgs::msg::AlignedSensorData::SharedPtr msg);
   
-  // Processing functions
-  sensor_msgs::msg::JointState combineCommands();
-  void applyMotionConstraints(sensor_msgs::msg::JointState & cmd);
+  
+ 
+  void loadTrajectoryFromFile(const std::string& filepath);  
 
   // Parameters
   int command_rate_;
@@ -46,15 +45,20 @@ private:
   std::mutex sensor_data_mutex_;
   
   // Subscribers
-  rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr rl_actions_sub_;
+ 
   rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr usb_commands_sub_;
-  rclcpp::Subscription<dodo_msgs::msg::AlignedSensorData>::SharedPtr aligned_sensor_data_sub_;
+ 
   
   // Publisher
   rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr processed_commands_pub_;
   
   // Timer
   rclcpp::TimerBase::SharedPtr timer_;
+
+  std::vector<sensor_msgs::msg::JointState> trajectory_;
+  size_t current_trajectory_index_ = 0;
+  bool trajectory_playback_active_ = false;
+  std::mutex trajectory_mutex_;
 };
 
 }  // namespace dodo_processing
