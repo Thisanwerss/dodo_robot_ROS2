@@ -102,6 +102,39 @@ bool OdriveCANInterface::sendPositionCommand(int can_id, double position)
   return true;
 }
 
+bool OdriveCANInterface::sendAxisStateRequest(int axis_id, uint32_t requested_state)
+{
+    if (socket_fd_ < 0) {
+        std::cerr << "Socket not initialized!" << std::endl;
+        return false;
+    }
+
+    struct can_frame frame;
+    frame.can_id = axis_id | 0x007;  // 0x007 = SetAxisState
+    frame.can_dlc = 8;
+
+    std::memset(frame.data, 0, 8);
+    std::memcpy(&frame.data[0], &requested_state, sizeof(requested_state));
+
+    ssize_t nbytes = write(socket_fd_, &frame, sizeof(frame));
+    if (nbytes != sizeof(frame)) {
+        std::cerr << "Failed to send AxisState command to axis " << axis_id << std::endl;
+        return false;
+    }
+
+    return true;
+}
+
+
+
+
+
+
+
+
+
+
+
 can_frame OdriveCANInterface::buildODriveRequestFrame(int motor_id, uint16_t base_cmd_id) {
     can_frame frame{};
     frame.can_id = (motor_id << 5)| base_cmd_id ;

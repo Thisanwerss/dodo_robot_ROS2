@@ -1,5 +1,7 @@
 #include "dodo_processing/processing_node.hpp"
 #include <nlohmann/json.hpp>
+#include <fstream>       
+#include <sstream>       
 
 namespace dodo_processing
 {
@@ -46,8 +48,17 @@ void ProcessingNode::loadTrajectoryFromFile(const std::string& filepath)
   trajectory_.clear();
   current_trajectory_index_ = 0;
 
+  std::ifstream file(filepath);
+  if (!file.is_open()) {
+    RCLCPP_ERROR(this->get_logger(), "Failed to open trajectory file: %s", filepath.c_str());
+    return;
+  }
+
+  std::stringstream buffer;
+  buffer << file.rdbuf();
+
   try {
-    auto traj_json = nlohmann::json::parse(filepath);
+    auto traj_json = nlohmann::json::parse(buffer.str());
 
     if (!traj_json.is_array()) {
       RCLCPP_ERROR(this->get_logger(), "Trajectory JSON is not an array.");
@@ -58,16 +69,21 @@ void ProcessingNode::loadTrajectoryFromFile(const std::string& filepath)
       sensor_msgs::msg::JointState js;
       js.header.stamp = this->now();
 
-     
       if (point.contains("name") && point["name"].is_array()) {
         js.name = point["name"].get<std::vector<std::string>>();
       }
 
-     
       if (point.contains("position") && point["position"].is_array()) {
         js.position = point["position"].get<std::vector<double>>();
       }
 
+      if (point.contains("velocity") && point["velocity"].is_array()) {
+        js.velocity = point["velocity"].get<std::vector<double>>();
+      }
+
+      if (point.contains("effort") && point["effort"].is_array()) {
+        js.effort = point["effort"].get<std::vector<double>>();
+      }
 
       trajectory_.push_back(js);
     }
@@ -78,9 +94,7 @@ void ProcessingNode::loadTrajectoryFromFile(const std::string& filepath)
   } catch (const nlohmann::json::exception& e) {
     RCLCPP_ERROR(this->get_logger(), "JSON parsing error: %s", e.what());
   }
-  
 }
-
 
 
 

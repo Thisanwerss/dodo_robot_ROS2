@@ -1,6 +1,7 @@
 #include "dodo_canbus/canbus_node.hpp"
 #include <nlohmann/json.hpp>
 #include "dodo_canbus/odrive_can.hpp"
+#include <fstream>
 
 namespace dodo_canbus
 {
@@ -132,7 +133,8 @@ void CANBusNode::updateCAN()
 
 
 void CANBusNode::sendCommands()
-{
+{  
+
   // Get the latest processed commands
   sensor_msgs::msg::JointState::SharedPtr commands;
   {
@@ -152,7 +154,24 @@ void CANBusNode::sendCommands()
     RCLCPP_DEBUG(this->get_logger(), "Simulating sending commands to motors");
     return;
   }
-  
+
+  // closeloop control
+  for (int node_id = 1; node_id <= 8; ++node_id) {
+  int can_id = node_id<<5 | 0x00C; 
+   if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x03)) {  // AXIS_STATE_FULL_CALIBRATION_SEQUENCE
+            std::cerr << "Failed to start calibration for motor " << can_id << std::endl;
+        }
+  std::this_thread::sleep_for(std::chrono::seconds(5));
+   if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x08)) {  // close loop control
+            std::cerr << "Failed to start calibration for motor " << can_id << std::endl;
+        } 
+}
+
+
+
+
+
+
   // Send position commands to motors (normal mode)
   for (size_t i = 0; i < commands->name.size() && i < commands->position.size(); ++i) {
     const auto& joint_name = commands->name[i];
@@ -180,7 +199,7 @@ void CANBusNode::readMotorStates()
   // Create JointState message
   auto joint_state_msg = std::make_unique<sensor_msgs::msg::JointState>();
   joint_state_msg->header.stamp = this->now();
-  
+
   if (dummy_mode_) {
     // Generate dummy motor states in dummy mode
     generateDummyMotorStates(*joint_state_msg);
@@ -189,27 +208,25 @@ void CANBusNode::readMotorStates()
     // Read motor states from CAN in normal mode
     std::map<int, MotorState> motor_states;
     bool result = false;
-    
+
     if (can_interface_ptr_) {
       result = can_interface_ptr_->readMotorStates(motor_ids_, motor_states);
     }
-    
+
     if (!result) {
       RCLCPP_WARN(this->get_logger(), "Failed to read motor states");
       return;
     }
-    
+
     // Populate JointState message
     for (const auto& joint_motor_pair : joint_to_motor_id_) {
       const auto& joint_name = joint_motor_pair.first;
       int motor_id = joint_motor_pair.second;
-      
-      // Check if we have state for this motor
+
       auto it = motor_states.find(motor_id);
       if (it != motor_states.end()) {
         const auto& state = it->second;
-        
-        // Add to message
+
         joint_state_msg->name.push_back(joint_name);
         joint_state_msg->position.push_back(state.position);
         joint_state_msg->velocity.push_back(state.velocity);
@@ -217,9 +234,25 @@ void CANBusNode::readMotorStates()
       }
     }
   }
-  
+
   // Publish motor states
-  motor_states_pub_->publish(std::move(joint_state_msg));
+  motor_states_pub_->publish(*joint_state_msg);
+
+  // === record ===
+  nlohmann::json frame;
+  frame["name"] = joint_state_msg->name;
+  frame["position"] = joint_state_msg->position;
+  frame["velocity"] = joint_state_msg->velocity;
+  frame["effort"] = joint_state_msg->effort;
+
+  {
+    std::lock_guard<std::mutex> lock(record_mutex_);  // 如果多线程访问
+    recorded_trajectory_.push_back(frame);
+
+    // 每帧都保存到文件（如需减少磁盘写入频率，可单独触发保存）
+    std::ofstream file("trajectory/record.json");
+    file << recorded_trajectory_.dump(2);
+  }
 }
 
 

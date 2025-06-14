@@ -72,6 +72,8 @@ private:
   
   // Joint to motor ID mapping
   std::map<std::string, int> joint_to_motor_id_;
+  std::vector<nlohmann::json> recorded_trajectory_;
+  std::mutex record_mutex_;
 };
 
 }  // namespace dodo_canbus

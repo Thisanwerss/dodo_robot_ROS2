@@ -51,6 +51,7 @@ public:
   
   // Emergency stop all motors
   bool emergencyStop();
+  bool sendAxisStateRequest(int axis_id, uint32_t requested_state);
   
 private:
   std::string can_interface_;
