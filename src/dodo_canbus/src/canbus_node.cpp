@@ -158,13 +158,20 @@ void CANBusNode::sendCommands()
   // closeloop control
   for (int node_id = 1; node_id <= 8; ++node_id) {
   int can_id = node_id<<5 | 0x00C; 
-   if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x03)) {  // AXIS_STATE_FULL_CALIBRATION_SEQUENCE
+   /*if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x03)) {  // AXIS_STATE_FULL_CALIBRATION_SEQUENCE
             std::cerr << "Failed to start calibration for motor " << can_id << std::endl;
         }
   std::this_thread::sleep_for(std::chrono::seconds(5));
    if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x08)) {  // close loop control
             std::cerr << "Failed to start calibration for motor " << can_id << std::endl;
+        } */
+
+  
+   if (!can_interface_ptr_->sendAxisStateRequest(can_id, 0x01)) {  // close loop control
+            std::cerr << "Failed to start calibration for motor " << can_id << std::endl;
         } 
+
+  
 }
 
 
@@ -246,12 +253,12 @@ void CANBusNode::readMotorStates()
   frame["effort"] = joint_state_msg->effort;
 
   {
-    std::lock_guard<std::mutex> lock(record_mutex_);  // 如果多线程访问
+    std::lock_guard<std::mutex> lock(record_mutex_);  
     recorded_trajectory_.push_back(frame);
-
+    nlohmann::json json_array = recorded_trajectory_;
     // 每帧都保存到文件（如需减少磁盘写入频率，可单独触发保存）
     std::ofstream file("trajectory/record.json");
-    file << recorded_trajectory_.dump(2);
+    file << json_array.dump(2);
   }
 }
 
