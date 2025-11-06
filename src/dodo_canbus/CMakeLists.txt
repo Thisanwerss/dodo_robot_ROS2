@@ -20,7 +20,7 @@ find_package(std_msgs REQUIRED)
 include_directories(include)
 
 # Add executable
-add_executable(canbus_node src/canbus_node.cpp src/odrive_can.cpp)
+add_executable(canbus_node  src/multi_motor_control_node.cpp)
 ament_target_dependencies(canbus_node rclcpp sensor_msgs std_msgs)
 
 # Install executables

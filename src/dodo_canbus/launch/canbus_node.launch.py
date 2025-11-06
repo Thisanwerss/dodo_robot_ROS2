@@ -1,84 +1,86 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.parameter_descriptions import ParameterValue
-import json
+
 
 def generate_launch_description():
-    # Launch arguments
-    can_interface_arg = DeclareLaunchArgument(
-        'can_interface',
-        default_value='can0',
-        description='Name of the CAN interface'
+    # ===== Launch Arguments =====
+    can_interfaces_arg = DeclareLaunchArgument(
+        'can_interfaces',
+        default_value="['can0']",
+        description='List of CAN interfaces to use (e.g., ["can0"])'
+    )
+
+    serial_ports_arg = DeclareLaunchArgument(
+        'serial_ports',
+        default_value="['/dev/ttyAM0']",
+        description='List of serial ports to use (e.g., ["/dev/ttyUSB0"])'
     )
 
     update_rate_arg = DeclareLaunchArgument(
         'update_rate',
         default_value='100',
-        description='Rate at which the CANBUS is updated in Hz'
+        description='Control loop update rate (Hz)'
     )
 
-    pid_gains_arg = DeclareLaunchArgument(
-        'pid_gains',
-        default_value='''{
-            "1": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "2": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "3": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "4": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "5": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "6": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "7": {"kp": 10.0, "ki": 0.1, "kd": 0.01},
-            "8": {"kp": 10.0, "ki": 0.1, "kd": 0.01}
-        }''',
-        description='JSON string defining PID gains for each motor'
-    )
-    
-    use_sim_time_arg = DeclareLaunchArgument(
-        'use_sim_time',
-        default_value='false',
-        description='Use simulation time'
-    )
-    
-    dummy_mode_arg = DeclareLaunchArgument(
-        'dummy_mode',
-        default_value='false',
-        description='Use dummy mode for testing without hardware'
+    # 左腿 CAN 电机 ID
+    motor_ids_can0_arg = DeclareLaunchArgument(
+        'motor_ids_can0',
+        default_value='[1, 2, 3, 4]',
+        description='Motor IDs on CAN0 (left leg)'
     )
 
-    # CANBUS node
-    canbus_node = Node(
+    # 右腿 串口 电机 ID
+    motor_ids_serial0_arg = DeclareLaunchArgument(
+        'motor_ids_serial0',
+        default_value='[5, 6, 7, 8]',
+        description='Motor IDs on Serial0 (right leg)'
+    )
+
+    # 电机类型（可选）
+    motor_types_can0_arg = DeclareLaunchArgument(
+        'motor_types_can0',
+        default_value="['DM4310', 'DM4310', 'DM4310', 'DM4310']",
+        description='Motor types for CAN0'
+    )
+
+    motor_types_serial0_arg = DeclareLaunchArgument(
+        'motor_types_serial0',
+        default_value="['DM4310', 'DM4310', 'DM4310', 'DM4310']",
+        description='Motor types for Serial0'
+    )
+
+
+
+    # ===== 启动节点 =====
+    multi_motor_node = Node(
         package='dodo_canbus',
-        executable='canbus_node',
-        name='canbus_node',
+        executable='canbus_node',  # 或 multi_motor_control_node
+        name='multi_motor_control_node',
+        output='screen',
         parameters=[{
-            'can_interface': LaunchConfiguration('can_interface'),
-            'update_rate': LaunchConfiguration('update_rate'),
-            'motor_ids': [1, 2, 3, 4, 5, 6, 7, 8],
-            'pid_gains': ParameterValue(LaunchConfiguration('pid_gains'), value_type=str),
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'dummy_mode': LaunchConfiguration('dummy_mode')
-        }],
-        output='screen'
-    )
-    
-    # Add debug print for parameters
-    print_params = Node(
-        package='dodo_bringup',  # Create a simple node to print parameters
-        executable='parameter_debugging_node',
-        name='parameter_debugging_node',
-        parameters=[{
-            'debug_mode': True
-        }],
-        output='screen'
+            'can_interfaces': ParameterValue(LaunchConfiguration('can_interfaces'), value_type=str),
+            'serial_ports': ParameterValue(LaunchConfiguration('serial_ports'), value_type=str),
+            'motor_ids_can0': ParameterValue(LaunchConfiguration('motor_ids_can0'), value_type=str),
+            'motor_ids_serial0': ParameterValue(LaunchConfiguration('motor_ids_serial0'), value_type=str),
+            'motor_types_can0': ParameterValue(LaunchConfiguration('motor_types_can0'), value_type=str),
+            'motor_types_serial0': ParameterValue(LaunchConfiguration('motor_types_serial0'), value_type=str),
+            'update_rate': LaunchConfiguration('update_rate')
+            
+            
+        }]
     )
 
+    # ===== 返回 Launch Description =====
     return LaunchDescription([
-        can_interface_arg,
+        can_interfaces_arg,
+        serial_ports_arg,
+        motor_ids_can0_arg,
+        motor_ids_serial0_arg,
+        motor_types_can0_arg,
+        motor_types_serial0_arg,
         update_rate_arg,
-        pid_gains_arg,
-        use_sim_time_arg,
-        dummy_mode_arg,
-        canbus_node,
-        print_params
+        multi_motor_node
     ])
